@@ -1,0 +1,108 @@
+# Suzuki-SDL Unified Configuration (ligand-aware BO closed loop)
+#
+# This template is expanded at runtime by suzuki_config_builder.py, which
+# generates a 7x7 ligand-pair setup_times table for every ligand-dependent
+# machine type (6dof_robot / pre_reactor / deposition_reactor / spectrometer /
+# mass_spectrometer). The expanded file is written to
+# sdl_config_suzuki_runtime.yaml and consumed by SDLEnv via DRLSchedulerWrapper.
+#
+# Machine IDs deliberately match DRL-training configs/sdl_config.yaml so the
+# pretrained MultiPPO model sees the same action space.
+
+# Tell DRLSchedulerWrapper to rebuild env.machines from THIS yaml's
+# process_steps.*.machines instead of inheriting the benchmark sdl_config.yaml
+# pool. Required because S6_sample_prep introduces a brand-new machine type
+# (liquid_handler) absent from the benchmark file. Total pool size = 40
+# (well under the pretrained MultiPPO n_machines=70 budget).
+drl_runtime_override:
+  use_config_machines: true
+
+env_config:
+  # MUST be "sdl_standard" so SDLEnv loads the pretrained-model-compatible
+  # ATLAS_CONFIG from sdl_process_config.py. The AtlasSimulator it builds is
+  # only used to reset() itself -- it never modulates S4 processing time
+  # because our suzuki_job_factory writes per-job processing_times directly
+  # from bo_params['res_time']. Using any other case_study string falls into
+  # SDLEnv's `else` branch which feeds AtlasSimulator an empty dict and
+  # crashes on `config['parameter_space']`.
+  case_study: "sdl_standard"
+  n_jobs: 30
+  buffer_size: 100
+  load_factor: 0.8
+  initial_jobs: 1
+
+  tmax_constraints:
+    # Only S3->S4 has strong chemistry justification for Suzuki coupling:
+    # pre-activated Pd(0) catalyst deactivates under air exposure >10 min.
+    - {from_step: "S4", to_step: "S5", max_interval: 5}
+    - {from_step: "S5", to_step: "S7", max_interval: 30}
+
+  # setup_times filled in at runtime by suzuki_config_builder.build_runtime_config()
+  setup_times: {}
+
+  mask_config:
+    tmax_lookahead_depth: 2
+    tmax_time_budget_ms: 10
+    cache_enabled: true
+
+# Stage sequence: S1 -> S2 -> S3 -> S4 -> S5 -> S3 -> S6
+# S4 processing_time is overridden per-job by the BO-suggested res_time (1-10 min).
+# All other steps use fixed placeholder durations.
+process_steps:
+  S1_substrate_prep:
+    processing_time: {base: 5, std: 0.0, distribution: "fixed"}
+  S2_mixing:
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+  S3_robotic_transfer:
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+  S4_reactor:
+    processing_time: {base: 5.0, std: 0.0, distribution: "suzuki_bo_driven"}
+  S5_quench:
+    processing_time: {base: 1, std: 0.0, distribution: "fixed"}
+  S6_sample_prep:
+     #Includes dilution, and preparation for HPLC analysis.
+    processing_time: {base: 5.0, std: 0.0, distribution: "fixed"}
+  S7_HPLC_quant:
+    processing_time: {base: 12.0, std: 0.0, distribution: "fixed"}
+
+job_types:
+  SDL_experiment:
+    sequence: ["S1","S2","S3","S4","S5","S3","S6","S3","S7"]
+    material: "sample"
+    substrate: "substrate"
+    priority: "normal"
+    weight: 1.0
+
+suzuki_bo_config:
+  planner_kind: "Botorch"        # Olympus planner identifier
+  goal: "maximize"               # maximize yield
+  n_warmup: 12                    # one LHS experiment per ligand (L0..L6)
+  max_in_flight: 16
+  warmstart_ask_batch: 3         # generate 3 new jobs after each warmstart completion
+  steady_ask_batch: 1            # 1-in-1-out after the pipeline is saturated
+  total_budget: 30
+  setup_time_diff_ligand: 1.5    # minutes, ligand swap setup
+  setup_time_same_ligand: 0.0
+  # machine_types that need ligand-dependent cleaning between experiments
+  ligand_dependent_machine_types:
+    - "6dof_robot"
+    - "pre_reactor"
+    - "deposition_reactor"
+    - "liquid_handler"
+    - "spectrometer"
+  parameter_space:
+    ligand:
+      type: "categorical"
+      options: ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]
+    res_time:
+      type: "continuous"
+      low: 1.0
+      high: 10.0
+    temperature:
+      type: "continuous"
+      low: 30.0
+      high: 110.0
+    catalyst_loading:
+      type: "continuous"
+      low: 0.489
+      high: 2.515

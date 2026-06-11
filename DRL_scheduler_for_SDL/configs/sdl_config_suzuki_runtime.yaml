@@ -1,0 +1,996 @@
+drl_runtime_override:
+  use_config_machines: true
+env_config:
+  case_study: sdl_standard
+  n_jobs: 30
+  buffer_size: 100
+  load_factor: 0.8
+  initial_jobs: 1
+  tmax_constraints:
+  - from_step: S4
+    to_step: S5
+    max_interval: 5
+  - from_step: S5
+    to_step: S7
+    max_interval: 30
+  setup_times:
+    6dof_robot:
+    - from_material: L0
+      to_material: L0
+      time: 0.0
+    - from_material: L0
+      to_material: L1
+      time: 1.5
+    - from_material: L0
+      to_material: L2
+      time: 1.5
+    - from_material: L0
+      to_material: L3
+      time: 1.5
+    - from_material: L0
+      to_material: L4
+      time: 1.5
+    - from_material: L0
+      to_material: L5
+      time: 1.5
+    - from_material: L0
+      to_material: L6
+      time: 1.5
+    - from_material: L1
+      to_material: L0
+      time: 1.5
+    - from_material: L1
+      to_material: L1
+      time: 0.0
+    - from_material: L1
+      to_material: L2
+      time: 1.5
+    - from_material: L1
+      to_material: L3
+      time: 1.5
+    - from_material: L1
+      to_material: L4
+      time: 1.5
+    - from_material: L1
+      to_material: L5
+      time: 1.5
+    - from_material: L1
+      to_material: L6
+      time: 1.5
+    - from_material: L2
+      to_material: L0
+      time: 1.5
+    - from_material: L2
+      to_material: L1
+      time: 1.5
+    - from_material: L2
+      to_material: L2
+      time: 0.0
+    - from_material: L2
+      to_material: L3
+      time: 1.5
+    - from_material: L2
+      to_material: L4
+      time: 1.5
+    - from_material: L2
+      to_material: L5
+      time: 1.5
+    - from_material: L2
+      to_material: L6
+      time: 1.5
+    - from_material: L3
+      to_material: L0
+      time: 1.5
+    - from_material: L3
+      to_material: L1
+      time: 1.5
+    - from_material: L3
+      to_material: L2
+      time: 1.5
+    - from_material: L3
+      to_material: L3
+      time: 0.0
+    - from_material: L3
+      to_material: L4
+      time: 1.5
+    - from_material: L3
+      to_material: L5
+      time: 1.5
+    - from_material: L3
+      to_material: L6
+      time: 1.5
+    - from_material: L4
+      to_material: L0
+      time: 1.5
+    - from_material: L4
+      to_material: L1
+      time: 1.5
+    - from_material: L4
+      to_material: L2
+      time: 1.5
+    - from_material: L4
+      to_material: L3
+      time: 1.5
+    - from_material: L4
+      to_material: L4
+      time: 0.0
+    - from_material: L4
+      to_material: L5
+      time: 1.5
+    - from_material: L4
+      to_material: L6
+      time: 1.5
+    - from_material: L5
+      to_material: L0
+      time: 1.5
+    - from_material: L5
+      to_material: L1
+      time: 1.5
+    - from_material: L5
+      to_material: L2
+      time: 1.5
+    - from_material: L5
+      to_material: L3
+      time: 1.5
+    - from_material: L5
+      to_material: L4
+      time: 1.5
+    - from_material: L5
+      to_material: L5
+      time: 0.0
+    - from_material: L5
+      to_material: L6
+      time: 1.5
+    - from_material: L6
+      to_material: L0
+      time: 1.5
+    - from_material: L6
+      to_material: L1
+      time: 1.5
+    - from_material: L6
+      to_material: L2
+      time: 1.5
+    - from_material: L6
+      to_material: L3
+      time: 1.5
+    - from_material: L6
+      to_material: L4
+      time: 1.5
+    - from_material: L6
+      to_material: L5
+      time: 1.5
+    - from_material: L6
+      to_material: L6
+      time: 0.0
+    pre_reactor:
+    - from_material: L0
+      to_material: L0
+      time: 0.0
+    - from_material: L0
+      to_material: L1
+      time: 1.5
+    - from_material: L0
+      to_material: L2
+      time: 1.5
+    - from_material: L0
+      to_material: L3
+      time: 1.5
+    - from_material: L0
+      to_material: L4
+      time: 1.5
+    - from_material: L0
+      to_material: L5
+      time: 1.5
+    - from_material: L0
+      to_material: L6
+      time: 1.5
+    - from_material: L1
+      to_material: L0
+      time: 1.5
+    - from_material: L1
+      to_material: L1
+      time: 0.0
+    - from_material: L1
+      to_material: L2
+      time: 1.5
+    - from_material: L1
+      to_material: L3
+      time: 1.5
+    - from_material: L1
+      to_material: L4
+      time: 1.5
+    - from_material: L1
+      to_material: L5
+      time: 1.5
+    - from_material: L1
+      to_material: L6
+      time: 1.5
+    - from_material: L2
+      to_material: L0
+      time: 1.5
+    - from_material: L2
+      to_material: L1
+      time: 1.5
+    - from_material: L2
+      to_material: L2
+      time: 0.0
+    - from_material: L2
+      to_material: L3
+      time: 1.5
+    - from_material: L2
+      to_material: L4
+      time: 1.5
+    - from_material: L2
+      to_material: L5
+      time: 1.5
+    - from_material: L2
+      to_material: L6
+      time: 1.5
+    - from_material: L3
+      to_material: L0
+      time: 1.5
+    - from_material: L3
+      to_material: L1
+      time: 1.5
+    - from_material: L3
+      to_material: L2
+      time: 1.5
+    - from_material: L3
+      to_material: L3
+      time: 0.0
+    - from_material: L3
+      to_material: L4
+      time: 1.5
+    - from_material: L3
+      to_material: L5
+      time: 1.5
+    - from_material: L3
+      to_material: L6
+      time: 1.5
+    - from_material: L4
+      to_material: L0
+      time: 1.5
+    - from_material: L4
+      to_material: L1
+      time: 1.5
+    - from_material: L4
+      to_material: L2
+      time: 1.5
+    - from_material: L4
+      to_material: L3
+      time: 1.5
+    - from_material: L4
+      to_material: L4
+      time: 0.0
+    - from_material: L4
+      to_material: L5
+      time: 1.5
+    - from_material: L4
+      to_material: L6
+      time: 1.5
+    - from_material: L5
+      to_material: L0
+      time: 1.5
+    - from_material: L5
+      to_material: L1
+      time: 1.5
+    - from_material: L5
+      to_material: L2
+      time: 1.5
+    - from_material: L5
+      to_material: L3
+      time: 1.5
+    - from_material: L5
+      to_material: L4
+      time: 1.5
+    - from_material: L5
+      to_material: L5
+      time: 0.0
+    - from_material: L5
+      to_material: L6
+      time: 1.5
+    - from_material: L6
+      to_material: L0
+      time: 1.5
+    - from_material: L6
+      to_material: L1
+      time: 1.5
+    - from_material: L6
+      to_material: L2
+      time: 1.5
+    - from_material: L6
+      to_material: L3
+      time: 1.5
+    - from_material: L6
+      to_material: L4
+      time: 1.5
+    - from_material: L6
+      to_material: L5
+      time: 1.5
+    - from_material: L6
+      to_material: L6
+      time: 0.0
+    deposition_reactor:
+    - from_material: L0
+      to_material: L0
+      time: 0.0
+    - from_material: L0
+      to_material: L1
+      time: 1.5
+    - from_material: L0
+      to_material: L2
+      time: 1.5
+    - from_material: L0
+      to_material: L3
+      time: 1.5
+    - from_material: L0
+      to_material: L4
+      time: 1.5
+    - from_material: L0
+      to_material: L5
+      time: 1.5
+    - from_material: L0
+      to_material: L6
+      time: 1.5
+    - from_material: L1
+      to_material: L0
+      time: 1.5
+    - from_material: L1
+      to_material: L1
+      time: 0.0
+    - from_material: L1
+      to_material: L2
+      time: 1.5
+    - from_material: L1
+      to_material: L3
+      time: 1.5
+    - from_material: L1
+      to_material: L4
+      time: 1.5
+    - from_material: L1
+      to_material: L5
+      time: 1.5
+    - from_material: L1
+      to_material: L6
+      time: 1.5
+    - from_material: L2
+      to_material: L0
+      time: 1.5
+    - from_material: L2
+      to_material: L1
+      time: 1.5
+    - from_material: L2
+      to_material: L2
+      time: 0.0
+    - from_material: L2
+      to_material: L3
+      time: 1.5
+    - from_material: L2
+      to_material: L4
+      time: 1.5
+    - from_material: L2
+      to_material: L5
+      time: 1.5
+    - from_material: L2
+      to_material: L6
+      time: 1.5
+    - from_material: L3
+      to_material: L0
+      time: 1.5
+    - from_material: L3
+      to_material: L1
+      time: 1.5
+    - from_material: L3
+      to_material: L2
+      time: 1.5
+    - from_material: L3
+      to_material: L3
+      time: 0.0
+    - from_material: L3
+      to_material: L4
+      time: 1.5
+    - from_material: L3
+      to_material: L5
+      time: 1.5
+    - from_material: L3
+      to_material: L6
+      time: 1.5
+    - from_material: L4
+      to_material: L0
+      time: 1.5
+    - from_material: L4
+      to_material: L1
+      time: 1.5
+    - from_material: L4
+      to_material: L2
+      time: 1.5
+    - from_material: L4
+      to_material: L3
+      time: 1.5
+    - from_material: L4
+      to_material: L4
+      time: 0.0
+    - from_material: L4
+      to_material: L5
+      time: 1.5
+    - from_material: L4
+      to_material: L6
+      time: 1.5
+    - from_material: L5
+      to_material: L0
+      time: 1.5
+    - from_material: L5
+      to_material: L1
+      time: 1.5
+    - from_material: L5
+      to_material: L2
+      time: 1.5
+    - from_material: L5
+      to_material: L3
+      time: 1.5
+    - from_material: L5
+      to_material: L4
+      time: 1.5
+    - from_material: L5
+      to_material: L5
+      time: 0.0
+    - from_material: L5
+      to_material: L6
+      time: 1.5
+    - from_material: L6
+      to_material: L0
+      time: 1.5
+    - from_material: L6
+      to_material: L1
+      time: 1.5
+    - from_material: L6
+      to_material: L2
+      time: 1.5
+    - from_material: L6
+      to_material: L3
+      time: 1.5
+    - from_material: L6
+      to_material: L4
+      time: 1.5
+    - from_material: L6
+      to_material: L5
+      time: 1.5
+    - from_material: L6
+      to_material: L6
+      time: 0.0
+    liquid_handler:
+    - from_material: L0
+      to_material: L0
+      time: 0.0
+    - from_material: L0
+      to_material: L1
+      time: 1.5
+    - from_material: L0
+      to_material: L2
+      time: 1.5
+    - from_material: L0
+      to_material: L3
+      time: 1.5
+    - from_material: L0
+      to_material: L4
+      time: 1.5
+    - from_material: L0
+      to_material: L5
+      time: 1.5
+    - from_material: L0
+      to_material: L6
+      time: 1.5
+    - from_material: L1
+      to_material: L0
+      time: 1.5
+    - from_material: L1
+      to_material: L1
+      time: 0.0
+    - from_material: L1
+      to_material: L2
+      time: 1.5
+    - from_material: L1
+      to_material: L3
+      time: 1.5
+    - from_material: L1
+      to_material: L4
+      time: 1.5
+    - from_material: L1
+      to_material: L5
+      time: 1.5
+    - from_material: L1
+      to_material: L6
+      time: 1.5
+    - from_material: L2
+      to_material: L0
+      time: 1.5
+    - from_material: L2
+      to_material: L1
+      time: 1.5
+    - from_material: L2
+      to_material: L2
+      time: 0.0
+    - from_material: L2
+      to_material: L3
+      time: 1.5
+    - from_material: L2
+      to_material: L4
+      time: 1.5
+    - from_material: L2
+      to_material: L5
+      time: 1.5
+    - from_material: L2
+      to_material: L6
+      time: 1.5
+    - from_material: L3
+      to_material: L0
+      time: 1.5
+    - from_material: L3
+      to_material: L1
+      time: 1.5
+    - from_material: L3
+      to_material: L2
+      time: 1.5
+    - from_material: L3
+      to_material: L3
+      time: 0.0
+    - from_material: L3
+      to_material: L4
+      time: 1.5
+    - from_material: L3
+      to_material: L5
+      time: 1.5
+    - from_material: L3
+      to_material: L6
+      time: 1.5
+    - from_material: L4
+      to_material: L0
+      time: 1.5
+    - from_material: L4
+      to_material: L1
+      time: 1.5
+    - from_material: L4
+      to_material: L2
+      time: 1.5
+    - from_material: L4
+      to_material: L3
+      time: 1.5
+    - from_material: L4
+      to_material: L4
+      time: 0.0
+    - from_material: L4
+      to_material: L5
+      time: 1.5
+    - from_material: L4
+      to_material: L6
+      time: 1.5
+    - from_material: L5
+      to_material: L0
+      time: 1.5
+    - from_material: L5
+      to_material: L1
+      time: 1.5
+    - from_material: L5
+      to_material: L2
+      time: 1.5
+    - from_material: L5
+      to_material: L3
+      time: 1.5
+    - from_material: L5
+      to_material: L4
+      time: 1.5
+    - from_material: L5
+      to_material: L5
+      time: 0.0
+    - from_material: L5
+      to_material: L6
+      time: 1.5
+    - from_material: L6
+      to_material: L0
+      time: 1.5
+    - from_material: L6
+      to_material: L1
+      time: 1.5
+    - from_material: L6
+      to_material: L2
+      time: 1.5
+    - from_material: L6
+      to_material: L3
+      time: 1.5
+    - from_material: L6
+      to_material: L4
+      time: 1.5
+    - from_material: L6
+      to_material: L5
+      time: 1.5
+    - from_material: L6
+      to_material: L6
+      time: 0.0
+    spectrometer:
+    - from_material: L0
+      to_material: L0
+      time: 0.0
+    - from_material: L0
+      to_material: L1
+      time: 1.5
+    - from_material: L0
+      to_material: L2
+      time: 1.5
+    - from_material: L0
+      to_material: L3
+      time: 1.5
+    - from_material: L0
+      to_material: L4
+      time: 1.5
+    - from_material: L0
+      to_material: L5
+      time: 1.5
+    - from_material: L0
+      to_material: L6
+      time: 1.5
+    - from_material: L1
+      to_material: L0
+      time: 1.5
+    - from_material: L1
+      to_material: L1
+      time: 0.0
+    - from_material: L1
+      to_material: L2
+      time: 1.5
+    - from_material: L1
+      to_material: L3
+      time: 1.5
+    - from_material: L1
+      to_material: L4
+      time: 1.5
+    - from_material: L1
+      to_material: L5
+      time: 1.5
+    - from_material: L1
+      to_material: L6
+      time: 1.5
+    - from_material: L2
+      to_material: L0
+      time: 1.5
+    - from_material: L2
+      to_material: L1
+      time: 1.5
+    - from_material: L2
+      to_material: L2
+      time: 0.0
+    - from_material: L2
+      to_material: L3
+      time: 1.5
+    - from_material: L2
+      to_material: L4
+      time: 1.5
+    - from_material: L2
+      to_material: L5
+      time: 1.5
+    - from_material: L2
+      to_material: L6
+      time: 1.5
+    - from_material: L3
+      to_material: L0
+      time: 1.5
+    - from_material: L3
+      to_material: L1
+      time: 1.5
+    - from_material: L3
+      to_material: L2
+      time: 1.5
+    - from_material: L3
+      to_material: L3
+      time: 0.0
+    - from_material: L3
+      to_material: L4
+      time: 1.5
+    - from_material: L3
+      to_material: L5
+      time: 1.5
+    - from_material: L3
+      to_material: L6
+      time: 1.5
+    - from_material: L4
+      to_material: L0
+      time: 1.5
+    - from_material: L4
+      to_material: L1
+      time: 1.5
+    - from_material: L4
+      to_material: L2
+      time: 1.5
+    - from_material: L4
+      to_material: L3
+      time: 1.5
+    - from_material: L4
+      to_material: L4
+      time: 0.0
+    - from_material: L4
+      to_material: L5
+      time: 1.5
+    - from_material: L4
+      to_material: L6
+      time: 1.5
+    - from_material: L5
+      to_material: L0
+      time: 1.5
+    - from_material: L5
+      to_material: L1
+      time: 1.5
+    - from_material: L5
+      to_material: L2
+      time: 1.5
+    - from_material: L5
+      to_material: L3
+      time: 1.5
+    - from_material: L5
+      to_material: L4
+      time: 1.5
+    - from_material: L5
+      to_material: L5
+      time: 0.0
+    - from_material: L5
+      to_material: L6
+      time: 1.5
+    - from_material: L6
+      to_material: L0
+      time: 1.5
+    - from_material: L6
+      to_material: L1
+      time: 1.5
+    - from_material: L6
+      to_material: L2
+      time: 1.5
+    - from_material: L6
+      to_material: L3
+      time: 1.5
+    - from_material: L6
+      to_material: L4
+      time: 1.5
+    - from_material: L6
+      to_material: L5
+      time: 1.5
+    - from_material: L6
+      to_material: L6
+      time: 0.0
+  mask_config:
+    tmax_lookahead_depth: 2
+    tmax_time_budget_ms: 10
+    cache_enabled: true
+process_steps:
+  S1_substrate_prep:
+    processing_time:
+      base: 5
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: SPU_1
+      type: substrate_processor
+      capacity: 1
+    - id: SPU_2
+      type: substrate_processor
+      capacity: 1
+    - id: SPU_3
+      type: substrate_processor
+      capacity: 1
+    - id: SPU_4
+      type: substrate_processor
+      capacity: 1
+    - id: SPU_5
+      type: substrate_processor
+      capacity: 1
+    - id: SPU_6
+      type: substrate_processor
+      capacity: 1
+  S2_mixing:
+    processing_time:
+      base: 1.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: pre_reactor_A
+      type: pre_reactor
+      capacity: 1
+    - id: pre_reactor_B
+      type: pre_reactor
+      capacity: 1
+    - id: pre_reactor_C
+      type: pre_reactor
+      capacity: 1
+    - id: pre_reactor_D
+      type: pre_reactor
+      capacity: 1
+    - id: pre_reactor_E
+      type: pre_reactor
+      capacity: 1
+    - id: pre_reactor_F
+      type: pre_reactor
+      capacity: 1
+  S3_robotic_transfer:
+    processing_time:
+      base: 1.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: robot_arm_A
+      type: 6dof_robot
+      capacity: 1
+    - id: robot_arm_B
+      type: 6dof_robot
+      capacity: 1
+  S4_reactor:
+    processing_time:
+      base: 5.0
+      std: 0.0
+      distribution: suzuki_bo_driven
+    machines:
+    - id: reactor_1
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_2
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_3
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_4
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_5
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_6
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_7
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_8
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_9
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_10
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_11
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+    - id: reactor_12
+      type: deposition_reactor
+      capacity: 1
+      atlas_controlled: true
+  S5_quench:
+    processing_time:
+      base: 1
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: cooling_chamber_A
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+    - id: cooling_chamber_B
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+    - id: cooling_chamber_C
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+    - id: cooling_chamber_D
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+    - id: cooling_chamber_E
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+    - id: cooling_chamber_F
+      type: cooling_chamber
+      capacity: 1
+      cooling_rate: 5
+  S6_sample_prep:
+    processing_time:
+      base: 5.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: liquid_handler_A
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_B
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_C
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_D
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_E
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_F
+      type: liquid_handler
+      capacity: 1
+  S7_HPLC_quant:
+    processing_time:
+      base: 12.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: spectrometer_A
+      type: spectrometer
+      capacity: 1
+    - id: spectrometer_B
+      type: spectrometer
+      capacity: 1
+job_types:
+  SDL_experiment:
+    sequence:
+    - S1
+    - S2
+    - S3
+    - S4
+    - S5
+    - S3
+    - S6
+    - S3
+    - S7
+    material: sample
+    substrate: substrate
+    priority: normal
+    weight: 1.0
+suzuki_bo_config:
+  planner_kind: Botorch
+  goal: maximize
+  n_warmup: 12
+  max_in_flight: 16
+  warmstart_ask_batch: 3
+  steady_ask_batch: 1
+  total_budget: 30
+  setup_time_diff_ligand: 1.5
+  setup_time_same_ligand: 0.0
+  ligand_dependent_machine_types:
+  - 6dof_robot
+  - pre_reactor
+  - deposition_reactor
+  - liquid_handler
+  - spectrometer
+  parameter_space:
+    ligand:
+      type: categorical
+      options:
+      - L0
+      - L1
+      - L2
+      - L3
+      - L4
+      - L5
+      - L6
+    res_time:
+      type: continuous
+      low: 1.0
+      high: 10.0
+    temperature:
+      type: continuous
+      low: 30.0
+      high: 110.0
+    catalyst_loading:
+      type: continuous
+      low: 0.489
+      high: 2.515

@@ -1,0 +1,308 @@
+# SDL Case Study完整参数配置
+
+case_study_name: "SDL_CVD_Materials_Synthesis"
+description: "Typical high-throughput CVD/ALD material deposition workflow"
+
+# 工艺流程定义
+process_steps:
+  S1_substrate_prep:
+    name: "Substrate Preparation"
+    operations: ["wash", "dry", "surface_clean"]
+    machines:
+      - {id: "washer_A", type: "ultrasonic", capacity: 1}
+      - {id: "washer_B", type: "ultrasonic", capacity: 1}
+      - {id: "washer_C", type: "ultrasonic", capacity: 1}
+      - {id: "washer_D", type: "ultrasonic", capacity: 1}
+      - {id: "washer_E", type: "ultrasonic", capacity: 1}
+      - {id: "washer_F", type: "ultrasonic", capacity: 1}
+      - {id: "washer_G", type: "ultrasonic", capacity: 1}
+      - {id: "washer_H", type: "ultrasonic", capacity: 1}
+      - {id: "dryer_A", type: "N2_blow", capacity: 2}
+      - {id: "dryer_B", type: "N2_blow", capacity: 2}
+      - {id: "dryer_C", type: "N2_blow", capacity: 2}
+      - {id: "dryer_D", type: "N2_blow", capacity: 2}
+    processing_time:
+      base: 2.5
+      std: 0.5
+      distribution: "normal"
+
+  S2_robotic_transfer:
+    name: "Robotic Transfer"
+    operations: ["pickup", "transfer", "place"]
+    machines:
+      - {id: "robot_arm_A", type: "6dof", capacity: 1}
+      - {id: "robot_arm_B", type: "6dof", capacity: 1}
+      - {id: "robot_arm_C", type: "6dof", capacity: 1}
+      - {id: "robot_arm_D", type: "6dof", capacity: 1}
+      - {id: "robot_arm_E", type: "6dof", capacity: 1}
+      - {id: "robot_arm_F", type: "6dof", capacity: 1}
+      - {id: "robot_arm_G", type: "6dof", capacity: 1}
+      - {id: "robot_arm_H", type: "6dof", capacity: 1}
+    processing_time:
+      base: 1.0
+      std: 0.1
+      distribution: "normal"
+
+  S3_pre_reaction:
+    name: "Pre-reaction Treatment"
+    operations: ["solution_immersion", "thermal_treatment", "plasma_clean", "anneal"]
+    machines:
+      - {id: "solution_bath_A", type: "chemical", capacity: 5}
+      - {id: "solution_bath_B", type: "chemical", capacity: 5}
+      - {id: "heater_A", type: "furnace", capacity: 1, max_temp: 500}
+      - {id: "heater_B", type: "furnace", capacity: 1, max_temp: 500}
+      - {id: "heater_C", type: "furnace", capacity: 1, max_temp: 500}
+      - {id: "heater_D", type: "furnace", capacity: 1, max_temp: 500}
+      - {id: "plasma_cleaner_A", type: "RF_plasma", capacity: 1, power: "100W"}
+      - {id: "plasma_cleaner_B", type: "RF_plasma", capacity: 1, power: "100W"}
+      - {id: "plasma_cleaner_C", type: "RF_plasma", capacity: 1, power: "100W" }
+      - {id: "plasma_cleaner_D", type: "RF_plasma", capacity: 1, power: "100W" }
+      - {id: "annealer_A", type: "RTA", capacity: 2, atmosphere: "N2"}
+      - {id: "annealer_B", type: "RTA", capacity: 2, atmosphere: "N2"}
+      - {id: "annealer_C", type: "RTA", capacity: 2, atmosphere: "N2" }
+      - {id: "annealer_D", type: "RTA", capacity: 2, atmosphere: "N2" }
+      - {id: "annealer_E", type: "RTA", capacity: 2, atmosphere: "N2" }
+      - {id: "annealer_F", type: "RTA", capacity: 2, atmosphere: "N2" }
+    processing_time:
+      base: 5.0
+      std: 1.5
+      distribution: "normal"
+
+  S4_reactor:
+    name: "CVD/ALD Reactor"
+    operations: ["load", "evacuate", "deposit", "cool_in_chamber"]
+    machines:
+      - { id: "CVD_reactor_1", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_2", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_3", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_4", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_5", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_6", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_7", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "CVD_reactor_8", type: "thermal_CVD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_1", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_2", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_3", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_4", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_5", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_6", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_7", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+      - { id: "ALD_reactor_8", type: "plasma_ALD", capacity: 1, atlas_controlled: true }
+    processing_time:
+      base: 13.0
+      std: 2.75
+      distribution: "atlas_modulated"
+
+  S5_cooling:
+    name: "Post-reaction Cooling"
+    operations: ["controlled_cooldown", "stabilization"]
+    machines:
+      - {id: "cooling_chamber_A", type: "forced_air", capacity: 2, cooling_rate: 5}
+      - {id: "cooling_chamber_B", type: "forced_air", capacity: 2, cooling_rate: 5}
+      - {id: "cooling_chamber_C", type: "forced_air", capacity: 2, cooling_rate: 5 }
+      - {id: "cooling_chamber_D", type: "forced_air", capacity: 2, cooling_rate: 5 }
+      - { id: "cooling_chamber_E", type: "forced_air", capacity: 2, cooling_rate: 5 }
+      - { id: "cooling_chamber_F", type: "forced_air", capacity: 2, cooling_rate: 5 }
+      - { id: "cooling_chamber_G", type: "forced_air", capacity: 2, cooling_rate: 5 }
+      - { id: "cooling_chamber_H", type: "forced_air", capacity: 2, cooling_rate: 5 }
+    processing_time:
+      base: 3.5
+      std: 0.7
+      distribution: "normal"
+
+  S6_spectroscopy:
+    name: "Spectroscopy Characterization"
+    operations: ["mount_sample", "calibrate", "measure", "data_export"]
+    machines:
+      - {id: "UV_Vis_A", type: "spectrophotometer", capacity: 1}
+      - {id: "UV_Vis_B", type: "spectrophotometer", capacity: 1}
+      - {id: "FTIR_A", type: "infrared_spec", capacity: 1}
+      - {id: "FTIR_B", type: "infrared_spec", capacity: 1}
+      - {id: "Raman_A", type: "raman_spec", capacity: 1}
+      - {id: "Raman_B", type: "raman_spec", capacity: 1}
+    processing_time:
+      base: 4.0
+      std: 0.8
+      distribution: "normal"
+
+  S7_mass_spec:
+    name: "Mass Spectrometry"
+    operations: ["sample_prep", "ionization", "analysis", "cleanup"]
+    machines:
+      - { id: "ICP_MS_A", type: "quadrupole", capacity: 1, is_bottleneck: true }
+      - { id: "ICP_MS_B", type: "quadrupole", capacity: 1, is_bottleneck: true }
+      - { id: "ICP_MS_C", type: "quadrupole", capacity: 1, is_bottleneck: true }
+      - { id: "ICP_MS_D", type: "quadrupole", capacity: 1, is_bottleneck: true }
+    processing_time:
+      base: 6.0
+      std: 1.8
+      distribution: "normal"
+
+# Tmax约束定义
+tmax_constraints:
+  - from_step: "S3"
+    to_step: "S4"
+    max_interval: 10.0
+    reason: "Prevent sample surface oxidation"
+    severity: "critical"
+    penalty_factor: 100.0
+
+  - from_step: "S4"
+    to_step: "S6"
+    max_interval: 15.0
+    reason: "Film quality degradation in air"
+    severity: "critical"
+    penalty_factor: 100.0
+
+  - from_step: "S4"
+    to_step: "S7"
+    max_interval: 15.0
+    reason: "Chemical composition stability"
+    severity: "critical"
+    penalty_factor: 100.0
+
+  - from_step: "S2"
+    to_step: "S3"
+    max_interval: 15.0
+    reason: "Solution evaporation on substrate"
+    severity: "moderate"
+    penalty_factor: 50.0
+
+  - from_step: "S6"
+    to_step: "S7"
+    max_interval: 30.0
+    reason: "Cross-contamination prevention"
+    severity: "low"
+    penalty_factor: 20.0
+
+# Setup Time矩阵
+setup_times:
+  CVD_reactor:
+    - {from_material: "GaAs", to_material: "InP", time: 5.0}
+    - {from_material: "InP", to_material: "GaAs", time: 5.0}
+    - {from_material: "GaAs", to_material: "GaAs", time: 0.5}
+    - {from_material: "InP", to_material: "InP", time: 0.5}
+
+  ALD_reactor:
+    - {from_material: "Al2O3", to_material: "TiO2", time: 3.0}
+    - {from_material: "TiO2", to_material: "Al2O3", time: 3.0}
+    - {from_material: "Al2O3", to_material: "Al2O3", time: 0.3}
+    - {from_material: "TiO2", to_material: "TiO2", time: 0.3}
+
+  UV_Vis:
+    - {from_substrate: "Si", to_substrate: "glass", time: 0.5}
+    - {from_substrate: "glass", to_substrate: "Si", time: 0.5}
+
+  ICP_MS:
+    - {from_type: "metal_oxide", to_type: "organic", time: 8.0}
+    - {from_type: "organic", to_type: "metal_oxide", time: 8.0}
+    - {from_type: "metal_oxide", to_type: "metal_oxide", time: 1.0}
+    - {from_type: "organic", to_type: "organic", time: 0.5}
+
+# Transfer Time矩阵（基于物理布局）
+transfer_times:
+  layout:
+    S1: {x: 0, y: 0}
+    S2: {x: 5, y: 0}
+    S3: {x: 10, y: 0}
+    S4: {x: 15, y: 0}
+    S5: {x: 15, y: 5}
+    S6: {x: 10, y: 5}
+    S7: {x: 5, y: 5}
+
+  robot_speed: 2.0  # meters per minute
+
+  # 预计算的转移时间矩阵
+  matrix:
+    - [0.0, 0.5, 1.0, 2.0, 3.0, 2.5, 3.5]  # from S1
+    - [0.5, 0.0, 0.5, 1.5, 2.0, 2.0, 3.0]  # from S2
+    - [1.0, 0.5, 0.0, 1.0, 1.5, 2.0, 2.5]  # from S3
+    - [2.0, 1.5, 1.0, 0.0, 0.5, 1.0, 1.5]  # from S4
+    - [3.0, 2.0, 1.5, 0.5, 0.0, 0.5, 1.0]  # from S5
+    - [2.5, 2.0, 2.0, 1.0, 0.5, 0.0, 0.5]  # from S6
+    - [3.5, 3.0, 2.5, 1.5, 1.0, 0.5, 0.0]  # from S7
+
+# Job类型定义
+job_types:
+  GaAs_deposition:
+    sequence: ["S1", "S2", "S3", "S4_CVD", "S5", "S2", "S6_UV", "S2", "S7"]
+    material: "GaAs"
+    substrate: "Si"
+    priority: "normal"
+    weight: 0.4
+
+  Al2O3_ALD:
+    sequence: ["S1", "S2", "S3", "S4_ALD", "S5", "S2", "S6_FTIR", "S2", "S7"]
+    material: "Al2O3"
+    substrate: "glass"
+    priority: "normal"
+    weight: 0.4
+
+  InP_urgent:
+    sequence: ["S1", "S2", "S3", "S4_CVD", "S5", "S2", "S6_Raman", "S2", "S7"]
+    material: "InP"
+    substrate: "Si"
+    priority: "high"
+    weight: 0.2
+
+# Atlas配置
+atlas_config:
+  enabled: true
+  optimization_objective: "target_thickness"
+
+  parameter_space:
+    temperature: [400, 600]  # Celsius
+    pressure: [1, 10]        # Torr
+    flow_rate: [10, 100]     # sccm
+    time: [5, 20]            # minutes
+
+  exploration_schedule:
+    phase_1:
+      jobs_range: [0, 10]
+      param_variation: 0.25
+    phase_2:
+      jobs_range: [10, 50]
+      param_variation: 0.10
+    phase_3:
+      jobs_range: [50, 200]
+      param_variation: 0.05
+
+  learning_model: "gaussian_process"
+  seed: 42
+
+# 实验规模配置
+experiment_scales:
+  debug:
+    n_jobs: 5
+    load_factor: 0.5
+    job_type_weights: [0.5, 0.5, 0.0]
+    purpose: "Quick debugging"
+
+  small:
+    n_jobs: 20
+    load_factor: 0.6
+    job_type_weights: [0.4, 0.4, 0.2]
+    purpose: "MILP verification + BC data"
+
+  medium:
+    n_jobs: 50
+    load_factor: 0.8
+    job_type_weights: [0.4, 0.4, 0.2]
+    purpose: "Main training scale"
+
+  large:
+    n_jobs: 200
+    load_factor: 0.9
+    job_type_weights: [0.4, 0.4, 0.2]
+    purpose: "Generalization test"
+
+  stress_test:
+    n_jobs: 500
+    load_factor: 0.95
+    job_type_weights: [0.4, 0.4, 0.2]
+    purpose: "Extreme load testing"
+
+  mask_config:
+    tmax_lookahead_depth: 2
+    tmax_time_budget_ms: 10
+    cache_enabled: true

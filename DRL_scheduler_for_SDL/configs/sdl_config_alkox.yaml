@@ -1,0 +1,181 @@
+env_config:
+  case_study: "sdl_standard"
+  n_jobs: 40
+  buffer_size: 100
+  load_factor: 0.8
+  initial_jobs: 1
+
+  tmax_constraints:
+    # S4->S5: 孵育结束后必须在tmax内完成酶灭活淬灭
+    #
+    # 化学依据（双重机制）:
+    # 1. Reactive oxygen species (H2O2) accumulation drives irreversible
+    #    oxidative deactivation of the enzymatic cascade when the H2O2
+    #    scavenging capacity of catalase is exhausted.
+    #    (Christensen et al., Org. Biomol. Chem., 2020;
+    #     Dong et al., Angew. Chem. Int. Ed., 2018)
+    # 2. Progressive O2 depletion leads to reaction stalling and a
+    #    time-dependent loss of enzyme activity not captured by the emulator.
+    #    (Christensen et al., Org. Biomol. Chem., 2020)
+    #
+    # Emulator语义声明:
+    # The Olympus AlkOx emulator was calibrated under fixed incubation
+    # duration (60 min) with stable enzymatic activity. Delayed quenching
+    # beyond tmax introduces a hidden time-dependent state variable
+    # (enzyme activity decay) that violates the stationarity assumption
+    # of the BO surrogate model, rendering the observed conversion a
+    # biased and semantically invalid input for the optimizer.
+    #
+    # tmax取值说明:
+    # The value of 15 min is selected as a conservative operational bound
+    # consistent with reported timescales of ROS-driven oxidative enzyme
+    # deactivation. It is not claimed as a directly measured threshold
+    # but reflects the order-of-magnitude timescale reported in the
+    # enzyme kinetics literature.
+    - {from_step: "S5", to_step: "S6", max_interval: 15}
+
+    # S5->S6: 淬灭后样品转移至HPLC的调度等待上限
+    # 性质: operational constraint (非严格化学约束)
+    # 灭活后benzaldehyde产物在水相中稳定(数小时量级)
+    # 此约束反映SDL调度系统的实际排队上限，防止样品积压
+    - {from_step: "S6", to_step: "S7", max_interval: 60}
+
+  setup_times: {}
+
+  mask_config:
+    tmax_lookahead_depth: 2
+    tmax_time_budget_ms: 10
+    cache_enabled: true
+
+# ============================================================
+# Stage sequence: S1 -> S2 -> S3 -> S4 -> S5 -> S6 -> S4 -> S7
+#
+# 机器配置:
+#   liquid_handler  : S1 (buffer ×6), S2 (solution ×6, dedicated), S3, S6
+#   incubator       : S5
+#   6dof_robot      : S4
+#   hplc            : S7
+#
+# 物理布局依据:
+#   真实biocatalytic SDL平台中，液体处理站(LHS)、孵育振荡器、
+#   HPLC进样器是三个独立设备，需要6-DOF机械臂在设备间转运vial
+#   (参考: [SDL enzymatic optimization platform, Adv. Intell. Syst., 2025])
+# ============================================================
+
+process_steps:
+
+  S1_buffer_prep:
+    # 配制pH磷酸盐缓冲液，液体处理站内完成
+    # pH 6.0-8.0是AlkOx活性的关键参数(Christensen et al., 2020)
+    # 机器: liquid_handler
+    processing_time: {base: 10.0, std: 0.0, distribution: "fixed"}
+
+  S2_enzyme_solution_prep:
+    # 三种酶独立配制后定量混合: catalase, peroxidase, alcohol_oxidase
+    # 注意: 三种酶需在底物加入前分别配制，避免H2O2提前积累
+    # 在LHS内部完成，pipetting arm直接操作，无需机械臂转运
+    # 机器: liquid_handler_solution (S2专用，6台，与S1的buffer LHS物理独立)
+    processing_time: {base: 6.0, std: 0.0, distribution: "fixed"}
+
+  S3_substrate_mixing:
+    # 加入benzyl alcohol底物，混合，计时起点
+    # 在LHS内部完成
+    # 机器: liquid_handler
+    processing_time: {base: 2.5, std: 0.0, distribution: "fixed"}
+
+  S4_robot_transfer:
+    # 机械臂将reaction vial从液体处理站转运至孵育振荡器
+    # 物理距离: LHS -> Incubator (~0.5-1m)
+    # 依据: 真实SDL平台中LHS与Incubator为独立设备
+    # 机器: 6dof_robot
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+
+  S5_enzymatic_incubation:
+    # 控温振荡孵育: 25°C, 250 rpm, 固定60 min
+    # 依据: Christensen et al.(2020) VTNA反应进程曲线显示
+    #        60 min为可测转化率与酶活稳定性的平衡窗口
+    # 注意: 此processing_time固定，不是BO参数
+    #        BO优化参数为酶浓度和pH，不包含反应时间
+    # 机器: incubator
+    processing_time: {base: 60.0, std: 0.0, distribution: "fixed"}
+
+  S6_quench_sample_prep:
+    # 酶灭活淬灭: 加入NaOH至pH>12，热处理(80°C, 5min)可选
+    # 过滤除蛋白沉淀，稀释至HPLC进样浓度
+    # 必须在S4结束后tmax(15 min)内完成(含robot transfer时间1 min)
+    # 依据: 标准酶活淬灭协议(Pharmaceutical Technology, 2024)
+    # 机器: liquid_handler
+    processing_time: {base: 6.0, std: 0.0, distribution: "fixed"}
+
+  S7_HPLC_quantification:
+    # RP-HPLC定量: benzaldehyde产物(260 nm UV检测)
+    # 瓶颈stage: 单台HPLC，共享资源
+    # 典型run time: 25-30 min (含进样、洗柱、平衡)
+    # 依据: 标准酶分析HPLC运行时间(Pharmaceutical Technology, 2024)
+    # 机器: hplc (瓶颈设备)
+    processing_time: {base: 28.0, std: 0.0, distribution: "fixed"}
+
+job_types:
+  SDL_experiment:
+    sequence: [
+      "S1_buffer_prep",
+      "S2_enzyme_solution_prep",
+      "S3_substrate_mixing",
+      "S4_robot_transfer",
+      "S5_enzymatic_incubation",
+      "S6_quench_sample_prep",
+      "S4_robot_transfer",
+      "S7_HPLC_quantification"
+    ]
+    material: "reaction_vial"
+    priority: "normal"
+    weight: 1.0
+
+
+alkox_bo_config:
+  planner_kind: "Botorch"
+  goal: "maximize"
+  n_warmup: 12
+  max_in_flight: 12      # 受限于incubator容量
+  warmstart_ask_batch: 3
+  steady_ask_batch: 1
+  total_budget: 30
+
+  # Low-yield warmstart: rejection-sample LHS pool, keep only points whose
+  # noiseless conversion <= ceiling, then farthest-point subset for coverage.
+  # Goal: best_so_far curve starts low and has room to climb under BO.
+  warmup_conv_ceiling: 10.0
+  warmup_pool_size: 400
+  warmup_max_tries: 20
+
+  # Smoothed-ascent BO acqf schedule. Pure EI on a fresh GP would jump to
+  # the global optimum in 1-2 BO steps; for the visualization we want a
+  # gradual climb instead. First ucb_steps BO ticks use qUCB with beta
+  # linearly decaying ucb_beta_start -> ucb_beta_end (more exploration,
+  # smaller per-step gains), then switch to LogEI.
+  ucb_steps: 8
+  ucb_beta_start: 4.0
+  ucb_beta_end: 1.0
+  acqf_num_restarts: 20
+  acqf_raw_samples: 512
+
+  parameter_space:
+    catalase:
+      type: "continuous"
+      low: 0.05
+      high: 1.0
+      unit: "mg/mL"
+    peroxidase:
+      type: "continuous"
+      low: 0.5
+      high: 10.0
+      unit: "U/mL"
+    alcohol_oxidase:
+      type: "continuous"
+      low: 2.0
+      high: 8.0
+      unit: "U/mL"
+    ph:
+      type: "continuous"
+      low: 6.0
+      high: 8.0

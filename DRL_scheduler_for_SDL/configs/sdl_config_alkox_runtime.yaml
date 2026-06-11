@@ -1,0 +1,233 @@
+env_config:
+  case_study: sdl_standard
+  n_jobs: 40
+  buffer_size: 100
+  load_factor: 0.8
+  initial_jobs: 1
+  tmax_constraints:
+  - from_step: S5
+    to_step: S6
+    max_interval: 15
+  - from_step: S6
+    to_step: S7
+    max_interval: 60
+  setup_times: {}
+  mask_config:
+    tmax_lookahead_depth: 2
+    tmax_time_budget_ms: 10
+    cache_enabled: true
+process_steps:
+  S1_buffer_prep:
+    processing_time:
+      base: 10.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: liquid_handler_buffer_1
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_buffer_2
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_buffer_3
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_buffer_4
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_buffer_5
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_buffer_6
+      type: liquid_handler
+      capacity: 1
+  S2_enzyme_solution_prep:
+    processing_time:
+      base: 6.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: liquid_handler_solution_1
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_solution_2
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_solution_3
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_solution_4
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_solution_5
+      type: liquid_handler
+      capacity: 1
+    - id: liquid_handler_solution_6
+      type: liquid_handler
+      capacity: 1
+  S3_substrate_mixing:
+    processing_time:
+      base: 2.5
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: mixer_1
+      type: mixer
+      capacity: 1
+    - id: mixer_2
+      type: mixer
+      capacity: 1
+    - id: mixer_3
+      type: mixer
+      capacity: 1
+    - id: mixer_4
+      type: mixer
+      capacity: 1
+    - id: mixer_5
+      type: mixer
+      capacity: 1
+    - id: mixer_6
+      type: mixer
+      capacity: 1
+  S4_robot_transfer:
+    processing_time:
+      base: 1.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: robot_arm_A
+      type: 6dof_robot
+      capacity: 1
+    - id: robot_arm_B
+      type: 6dof_robot
+      capacity: 1
+  S5_enzymatic_incubation:
+    processing_time:
+      base: 60.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: incubator_01
+      type: incubator
+      capacity: 1
+    - id: incubator_02
+      type: incubator
+      capacity: 1
+    - id: incubator_03
+      type: incubator
+      capacity: 1
+    - id: incubator_04
+      type: incubator
+      capacity: 1
+    - id: incubator_05
+      type: incubator
+      capacity: 1
+    - id: incubator_06
+      type: incubator
+      capacity: 1
+    - id: incubator_07
+      type: incubator
+      capacity: 1
+    - id: incubator_08
+      type: incubator
+      capacity: 1
+    - id: incubator_09
+      type: incubator
+      capacity: 1
+    - id: incubator_10
+      type: incubator
+      capacity: 1
+    - id: incubator_11
+      type: incubator
+      capacity: 1
+    - id: incubator_12
+      type: incubator
+      capacity: 1
+  S6_quench_sample_prep:
+    processing_time:
+      base: 6.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: cooling_chamber_A
+      type: cooling_chamber
+      capacity: 1
+    - id: cooling_chamber_B
+      type: cooling_chamber
+      capacity: 1
+    - id: cooling_chamber_C
+      type: cooling_chamber
+      capacity: 1
+    - id: cooling_chamber_D
+      type: cooling_chamber
+      capacity: 1
+    - id: cooling_chamber_E
+      type: cooling_chamber
+      capacity: 1
+    - id: cooling_chamber_F
+      type: cooling_chamber
+      capacity: 1
+  S7_HPLC_quantification:
+    processing_time:
+      base: 28.0
+      std: 0.0
+      distribution: fixed
+    machines:
+    - id: hplc_A
+      type: hplc
+      capacity: 1
+    - id: hplc_B
+      type: hplc
+      capacity: 1
+job_types:
+  SDL_experiment:
+    sequence:
+    - S1_buffer_prep
+    - S2_enzyme_solution_prep
+    - S3_substrate_mixing
+    - S4_robot_transfer
+    - S5_enzymatic_incubation
+    - S6_quench_sample_prep
+    - S4_robot_transfer
+    - S7_HPLC_quantification
+    material: reaction_vial
+    priority: normal
+    weight: 1.0
+alkox_bo_config:
+  planner_kind: Botorch
+  goal: maximize
+  n_warmup: 12
+  max_in_flight: 12
+  warmstart_ask_batch: 3
+  steady_ask_batch: 1
+  total_budget: 30
+  warmup_conv_ceiling: 10.0
+  warmup_pool_size: 400
+  warmup_max_tries: 20
+  ucb_steps: 8
+  ucb_beta_start: 4.0
+  ucb_beta_end: 1.0
+  acqf_num_restarts: 20
+  acqf_raw_samples: 512
+  parameter_space:
+    catalase:
+      type: continuous
+      low: 0.05
+      high: 1.0
+      unit: mg/mL
+    peroxidase:
+      type: continuous
+      low: 0.5
+      high: 10.0
+      unit: U/mL
+    alcohol_oxidase:
+      type: continuous
+      low: 2.0
+      high: 8.0
+      unit: U/mL
+    ph:
+      type: continuous
+      low: 6.0
+      high: 8.0
+drl_runtime_override:
+  use_config_machines: true
