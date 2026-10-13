@@ -1,0 +1,10 @@
+severity,policy,makespan_min,total_solving_time_s,tmax_violations,completed_jobs
+10%,ERC-FSS,212.318,23.3962,0,30
+10%,ChemOS built-in dispatch with termination,242.694,0.0025,17,30
+10%,ChemOS built-in dispatch with no termination,230.000,0.0025,26,30
+20%,ERC-FSS,208.080,14.6500,0,30
+20%,ChemOS built-in dispatch with termination,243.471,0.0025,18,30
+20%,ChemOS built-in dispatch with no termination,228.500,0.0025,26,30
+30%,ERC-FSS,204.508,13.6673,0,30
+30%,ChemOS built-in dispatch with termination,240.006,0.0026,16,30
+30%,ChemOS built-in dispatch with no termination,225.500,0.0025,26,30

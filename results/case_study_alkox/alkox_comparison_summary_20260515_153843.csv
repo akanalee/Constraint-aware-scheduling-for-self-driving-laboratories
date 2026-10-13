@@ -1,0 +1,3 @@
+episode,mode,seed,completed_jobs,makespan_min,ercfss_makespan_min,wall_time_s,bo_wall_time_s,best_yield,final_best_so_far,mean_yield,n_ask,n_tell,tmax_violations,aborted_count
+0,ERCFSS,3723620,30,506.714,506.697,338.29,18.040,26.313,26.313,16.567,30,30,0,0
+0,ChemOSDispatch,3723620,30,595.500,595.500,17.31,16.917,25.058,25.058,12.511,30,30,12,12

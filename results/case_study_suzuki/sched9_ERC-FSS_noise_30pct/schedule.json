@@ -1,0 +1,4549 @@
+{
+  "timestamp": "2026-06-09T00:37:49.133052",
+  "ERC-FSS": {
+    "makespan": 204.50755997896638,
+    "job_details": {
+      "e0_ERCFSS_noise_30pct_job_0002": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 6.001666148503621,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 6.001666148503621,
+            "scheduled_end": 7.001666148503621,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 7.001666148503621,
+            "scheduled_end": 13.72721314850362,
+            "scheduled_machine": "reactor_10"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 13.72721314850362,
+            "scheduled_end": 14.72721314850362,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 14.72721314850362,
+            "scheduled_end": 15.72721314850362,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 15.72721314850362,
+            "scheduled_end": 20.727213148503623,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 20.727213148503623,
+            "scheduled_end": 21.727213148503623,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0002_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 21.727213148503623,
+            "scheduled_end": 33.72721314850362,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0003": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_5"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 6.001666148503621,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.78715428113939,
+            "scheduled_end": 46.78715428113939,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 46.800270636876434,
+            "scheduled_end": 48.77455663687643,
+            "scheduled_machine": "reactor_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 48.77455663687643,
+            "scheduled_end": 49.77455663687643,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 49.77455663687643,
+            "scheduled_end": 50.77455663687643,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 50.77455663687643,
+            "scheduled_end": 55.77455663687643,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 55.77455663687643,
+            "scheduled_end": 56.77455663687643,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0003_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 57.83388198449198,
+            "scheduled_end": 69.833881984492,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0004": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 6.001666148503621,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 7.001666148503621,
+            "scheduled_end": 8.00166614850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 8.00166614850362,
+            "scheduled_end": 12.800845148503619,
+            "scheduled_machine": "reactor_11"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 12.800845148503619,
+            "scheduled_end": 13.800845148503619,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 13.800845148503619,
+            "scheduled_end": 14.800845148503619,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 14.800845148503619,
+            "scheduled_end": 19.80084514850362,
+            "scheduled_machine": "liquid_handler_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 21.727213148503623,
+            "scheduled_end": 22.727213148503623,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0004_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 33.72721314850362,
+            "scheduled_end": 45.72721314850362,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0005": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_6"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 6.001666148503621,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 15.72721314850362,
+            "scheduled_end": 16.727213148503623,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 16.727213148503623,
+            "scheduled_end": 18.93424214850362,
+            "scheduled_machine": "reactor_12"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 18.93424214850362,
+            "scheduled_end": 19.93424214850362,
+            "scheduled_machine": "cooling_chamber_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 21.80084514850362,
+            "scheduled_end": 22.80084514850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 22.80084514850362,
+            "scheduled_end": 27.80084514850362,
+            "scheduled_machine": "liquid_handler_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 27.80084514850362,
+            "scheduled_end": 28.80084514850362,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0005_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 33.81006302668635,
+            "scheduled_end": 45.81006302668635,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0006": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_4"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 6.001666148503621,
+            "scheduled_end": 7.001666148503621,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 57.87267461617789,
+            "scheduled_end": 58.87267461617789,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 58.88503691355388,
+            "scheduled_end": 60.15924591355388,
+            "scheduled_machine": "reactor_12"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 60.15924591355388,
+            "scheduled_end": 61.15924591355388,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 61.15924591355388,
+            "scheduled_end": 62.15924591355388,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 62.15924591355388,
+            "scheduled_end": 67.15924591355389,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 67.15924591355389,
+            "scheduled_end": 68.15924591355389,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0006_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 69.846244281868,
+            "scheduled_end": 81.846244281868,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0007": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 0.0016661485036214192,
+            "scheduled_end": 5.001666148503621,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 6.001666148503621,
+            "scheduled_machine": "pre_reactor_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 6.001666148503621,
+            "scheduled_end": 7.001666148503621,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 7.001666148503621,
+            "scheduled_end": 12.50090114850362,
+            "scheduled_machine": "reactor_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 12.50090114850362,
+            "scheduled_end": 13.50090114850362,
+            "scheduled_machine": "cooling_chamber_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 14.800845148503619,
+            "scheduled_end": 15.800845148503619,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 15.800845148503619,
+            "scheduled_end": 20.80084514850362,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 20.80084514850362,
+            "scheduled_end": 21.80084514850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0007_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 21.80084514850362,
+            "scheduled_end": 33.80084514850362,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0000": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 10.00166614850362,
+            "scheduled_end": 11.00166614850362,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 79.1981094183684,
+            "scheduled_end": 80.1981094183684,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 80.1981094183684,
+            "scheduled_end": 83.2565914183684,
+            "scheduled_machine": "reactor_10"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 83.26643024581948,
+            "scheduled_end": 84.26643024581948,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 84.46020529270615,
+            "scheduled_end": 85.46020529270615,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 85.46020529270615,
+            "scheduled_end": 90.46020529270615,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 90.46020529270615,
+            "scheduled_end": 91.46020529270615,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0000_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 96.46989652713583,
+            "scheduled_end": 108.46989652713583,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0001": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_5"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 10.00166614850362,
+            "scheduled_end": 11.00166614850362,
+            "scheduled_machine": "pre_reactor_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 22.727213148503623,
+            "scheduled_end": 23.727213148503623,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 23.727213148503623,
+            "scheduled_end": 28.05157614850362,
+            "scheduled_machine": "reactor_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 28.05157614850362,
+            "scheduled_end": 29.05157614850362,
+            "scheduled_machine": "cooling_chamber_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 30.03058914850362,
+            "scheduled_end": 31.03058914850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 31.03058914850362,
+            "scheduled_end": 36.03058914850362,
+            "scheduled_machine": "liquid_handler_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 36.041301148237864,
+            "scheduled_end": 37.041301148237864,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0001_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.73792514823786,
+            "scheduled_end": 57.73792514823786,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0008": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 10.00166614850362,
+            "scheduled_end": 11.00166614850362,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 80.1981094183684,
+            "scheduled_end": 81.1981094183684,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 81.1981094183684,
+            "scheduled_end": 84.0596064183684,
+            "scheduled_machine": "reactor_11"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 84.0711386932504,
+            "scheduled_end": 85.0711386932504,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 85.0711386932504,
+            "scheduled_end": 86.0711386932504,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 86.0711386932504,
+            "scheduled_end": 91.0711386932504,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 91.0711386932504,
+            "scheduled_end": 92.0711386932504,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0008_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 105.79735051018906,
+            "scheduled_end": 117.79735051018906,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0009": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_4"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 10.00166614850362,
+            "scheduled_end": 11.00166614850362,
+            "scheduled_machine": "pre_reactor_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 22.80084514850362,
+            "scheduled_end": 23.80084514850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 23.80084514850362,
+            "scheduled_end": 28.03058914850362,
+            "scheduled_machine": "reactor_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 28.03058914850362,
+            "scheduled_end": 29.03058914850362,
+            "scheduled_machine": "cooling_chamber_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 29.03058914850362,
+            "scheduled_end": 30.03058914850362,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 30.03058914850362,
+            "scheduled_end": 35.03058914850362,
+            "scheduled_machine": "liquid_handler_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 35.041301148237864,
+            "scheduled_end": 36.041301148237864,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0009_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.820765628754934,
+            "scheduled_end": 57.820765628754934,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0010": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 10.00166614850362,
+            "scheduled_end": 11.00166614850362,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 65.9467413319721,
+            "scheduled_end": 66.9467413319721,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 66.9467413319721,
+            "scheduled_end": 69.4272403319721,
+            "scheduled_machine": "reactor_6"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 69.4272403319721,
+            "scheduled_end": 70.4272403319721,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 70.43686665296997,
+            "scheduled_end": 71.43686665296997,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 71.44867301782415,
+            "scheduled_end": 76.44867301782415,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 76.44867301782415,
+            "scheduled_end": 77.44867301782415,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0010_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 81.7752101662051,
+            "scheduled_end": 93.7752101662051,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0011": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 5.001666148503621,
+            "scheduled_end": 10.00166614850362,
+            "scheduled_machine": "SPU_6"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 11.00166614850362,
+            "scheduled_end": 12.00166614850362,
+            "scheduled_machine": "pre_reactor_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 47.41297570906382,
+            "scheduled_end": 48.41297570906382,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 48.41297570906382,
+            "scheduled_end": 55.923865709063826,
+            "scheduled_machine": "reactor_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 55.923865709063826,
+            "scheduled_end": 56.923865709063826,
+            "scheduled_machine": "cooling_chamber_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 56.923865709063826,
+            "scheduled_end": 57.923865709063826,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 57.934379034596105,
+            "scheduled_end": 62.934379034596105,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 62.9467413319721,
+            "scheduled_end": 63.9467413319721,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0011_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 69.76340380135092,
+            "scheduled_end": 81.76340380135092,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0012": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 33.77241638501486,
+            "scheduled_end": 38.77241638501486,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 38.7831283847491,
+            "scheduled_end": 39.7831283847491,
+            "scheduled_machine": "pre_reactor_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 127.16335318217207,
+            "scheduled_end": 128.1633531821721,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 128.1633531821721,
+            "scheduled_end": 131.13404873086296,
+            "scheduled_machine": "reactor_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 131.1429208663432,
+            "scheduled_end": 132.1429208663432,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 132.1429208663432,
+            "scheduled_end": 133.1429208663432,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 133.15253479752224,
+            "scheduled_end": 138.15253479752224,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 138.15253479752224,
+            "scheduled_end": 139.15253479752224,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0012_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 153.8291829270414,
+            "scheduled_end": 165.8291829270414,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0013": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 33.85987850824993,
+            "scheduled_end": 38.85987850824993,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 38.85987850824993,
+            "scheduled_end": 39.85987850824993,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 39.85987850824993,
+            "scheduled_end": 40.85987850824993,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 40.85987850824993,
+            "scheduled_end": 45.399859353326775,
+            "scheduled_machine": "reactor_10"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.399859353326775,
+            "scheduled_end": 46.399859353326775,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 46.41297570906382,
+            "scheduled_end": 47.41297570906382,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 47.41297570906382,
+            "scheduled_end": 52.41297570906382,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 52.41297570906382,
+            "scheduled_end": 53.41297570906382,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0013_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 57.75104150397491,
+            "scheduled_end": 69.75104150397492,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0014": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.78715428113939,
+            "scheduled_end": 50.78715428113939,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 50.800270636876434,
+            "scheduled_end": 51.800270636876434,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 92.0711386932504,
+            "scheduled_end": 93.0711386932504,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 93.0711386932504,
+            "scheduled_end": 98.57037358902808,
+            "scheduled_machine": "reactor_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 98.58098165813004,
+            "scheduled_end": 99.58098165813004,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 99.58098165813004,
+            "scheduled_end": 100.58098165813004,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 100.58098165813004,
+            "scheduled_end": 105.58098165813004,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 105.58098165813004,
+            "scheduled_end": 106.58098165813004,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0014_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 108.47903929551886,
+            "scheduled_end": 120.47903929551886,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0015": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 45.880370926857005,
+            "scheduled_end": 50.880370926857005,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 50.880370926857005,
+            "scheduled_end": 51.880370926857005,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 63.9467413319721,
+            "scheduled_end": 64.9467413319721,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 64.9467413319721,
+            "scheduled_end": 71.18630305351422,
+            "scheduled_machine": "reactor_4"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 71.1981094183684,
+            "scheduled_end": 72.1981094183684,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 72.1981094183684,
+            "scheduled_end": 73.1981094183684,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 73.1981094183684,
+            "scheduled_end": 78.1981094183684,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 78.1981094183684,
+            "scheduled_end": 79.1981094183684,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0015_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 93.7867424410871,
+            "scheduled_end": 105.7867424410871,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0016": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 57.87267461617789,
+            "scheduled_end": 62.87267461617789,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 62.88503691355388,
+            "scheduled_end": 63.88503691355388,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 64.9467413319721,
+            "scheduled_end": 65.9467413319721,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 65.9467413319721,
+            "scheduled_end": 71.09078000797199,
+            "scheduled_machine": "reactor_5"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 71.10258637282617,
+            "scheduled_end": 72.10258637282617,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 77.44867301782415,
+            "scheduled_end": 78.44867301782415,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 78.44867301782415,
+            "scheduled_end": 83.44867301782415,
+            "scheduled_machine": "liquid_handler_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 83.46020529270615,
+            "scheduled_end": 84.46020529270615,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0016_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 84.46020529270615,
+            "scheduled_end": 96.46020529270615,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0017": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 58.01544436216355,
+            "scheduled_end": 63.01544436216355,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 63.01544436216355,
+            "scheduled_end": 64.01544436216355,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 113.70254886914027,
+            "scheduled_end": 114.70254886914027,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 114.70254886914027,
+            "scheduled_end": 120.94669071563182,
+            "scheduled_machine": "reactor_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 120.9583442462295,
+            "scheduled_end": 121.9583442462295,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 121.9583442462295,
+            "scheduled_end": 122.9583442462295,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 122.9583442462295,
+            "scheduled_end": 127.9583442462295,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 128.1633531821721,
+            "scheduled_end": 129.1633531821721,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0017_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 132.49794604778734,
+            "scheduled_end": 144.49794604778734,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0018": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 69.88722528219223,
+            "scheduled_end": 74.88722528219223,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 74.89903164704641,
+            "scheduled_end": 75.89903164704641,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 102.25663816904675,
+            "scheduled_end": 103.25663816904675,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 103.25663816904675,
+            "scheduled_end": 105.24630681569354,
+            "scheduled_machine": "reactor_10"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 105.24630681569354,
+            "scheduled_end": 106.24630681569354,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 106.25544958407657,
+            "scheduled_end": 107.25544958407657,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 107.25544958407657,
+            "scheduled_end": 112.25544958407657,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 112.26601453915215,
+            "scheduled_end": 113.26601453915215,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0018_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 117.80791546526464,
+            "scheduled_end": 129.80791546526464,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0019": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 70.5130831638972,
+            "scheduled_end": 75.5130831638972,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 75.5130831638972,
+            "scheduled_end": 76.5130831638972,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 139.15253479752224,
+            "scheduled_end": 140.15253479752224,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 140.15253479752224,
+            "scheduled_end": 142.4403697753726,
+            "scheduled_machine": "reactor_12"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 142.4403697753726,
+            "scheduled_end": 143.4403697753726,
+            "scheduled_machine": "cooling_chamber_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 143.4403697753726,
+            "scheduled_end": 144.4403697753726,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 144.4403697753726,
+            "scheduled_end": 149.4403697753726,
+            "scheduled_machine": "liquid_handler_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 149.4403697753726,
+            "scheduled_end": 150.4403697753726,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0019_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 165.8291829270414,
+            "scheduled_end": 177.8291829270414,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0020": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 81.8385023991267,
+            "scheduled_end": 86.8385023991267,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 86.8500346740087,
+            "scheduled_end": 87.8500346740087,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 91.46020529270615,
+            "scheduled_end": 92.46020529270615,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 92.46020529270615,
+            "scheduled_end": 94.23633886551511,
+            "scheduled_machine": "reactor_12"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 94.24603009994479,
+            "scheduled_end": 95.24603009994479,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 95.24603009994479,
+            "scheduled_end": 96.24603009994479,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 96.24603009994479,
+            "scheduled_end": 101.24603009994479,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 101.25663816904675,
+            "scheduled_end": 102.25663816904675,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0020_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 120.48907391230709,
+            "scheduled_end": 132.4890739123071,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0021": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 83.31348094145459,
+            "scheduled_end": 88.31348094145459,
+            "scheduled_machine": "SPU_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 88.31348094145459,
+            "scheduled_end": 89.31348094145459,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 114.70254886914027,
+            "scheduled_end": 115.70254886914027,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 115.70254886914027,
+            "scheduled_end": 125.15169965157439,
+            "scheduled_machine": "reactor_11"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 125.16335318217207,
+            "scheduled_end": 126.16335318217207,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 126.16335318217207,
+            "scheduled_end": 127.16335318217207,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 127.16335318217207,
+            "scheduled_end": 132.1633531821721,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 132.17222531765233,
+            "scheduled_end": 133.17222531765233,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0021_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 144.50755997896638,
+            "scheduled_end": 156.50755997896638,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0022": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 93.8600133419037,
+            "scheduled_end": 98.8600133419037,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 98.87062141100566,
+            "scheduled_end": 99.87062141100566,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 127.64835320313772,
+            "scheduled_end": 128.64835320313773,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 128.64835320313773,
+            "scheduled_end": 138.61131378189933,
+            "scheduled_machine": "reactor_4"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 138.62092771307837,
+            "scheduled_end": 139.62092771307837,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 139.62092771307837,
+            "scheduled_end": 140.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 140.62092771307837,
+            "scheduled_end": 145.62092771307837,
+            "scheduled_machine": "liquid_handler_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 145.62092771307837,
+            "scheduled_end": 146.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0022_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 156.50755997896638,
+            "scheduled_end": 168.50755997896638,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0023": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 96.60751830736795,
+            "scheduled_end": 101.60751830736795,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 101.60751830736795,
+            "scheduled_end": 102.60751830736795,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 103.25663816904675,
+            "scheduled_end": 104.25663816904675,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 104.25663816904675,
+            "scheduled_end": 111.69198391406469,
+            "scheduled_machine": "reactor_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 111.70254886914027,
+            "scheduled_end": 112.70254886914027,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 112.70254886914027,
+            "scheduled_end": 113.70254886914027,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 113.70254886914027,
+            "scheduled_end": 118.70254886914027,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 118.7125834859285,
+            "scheduled_end": 119.7125834859285,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0023_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 129.81956899586234,
+            "scheduled_end": 141.81956899586234,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0024": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 106.01250730355581,
+            "scheduled_end": 111.01250730355581,
+            "scheduled_machine": "SPU_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 111.02307225863139,
+            "scheduled_end": 112.02307225863139,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 160.62092771307837,
+            "scheduled_end": 161.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 161.62092771307837,
+            "scheduled_end": 163.8144351190883,
+            "scheduled_machine": "reactor_5"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 163.8144351190883,
+            "scheduled_end": 164.8144351190883,
+            "scheduled_machine": "cooling_chamber_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 164.8144351190883,
+            "scheduled_end": 165.8144351190883,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 165.8144351190883,
+            "scheduled_end": 170.8144351190883,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 170.8144351190883,
+            "scheduled_end": 171.8144351190883,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0024_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 180.50755997896638,
+            "scheduled_end": 192.50755997896638,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0025": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 108.56522952715555,
+            "scheduled_end": 113.56522952715555,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 113.56522952715555,
+            "scheduled_end": 114.56522952715555,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 147.62092771307837,
+            "scheduled_end": 148.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 148.62092771307837,
+            "scheduled_end": 158.62092771307837,
+            "scheduled_machine": "reactor_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 158.62092771307837,
+            "scheduled_end": 159.62092771307837,
+            "scheduled_machine": "cooling_chamber_D"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 159.62092771307837,
+            "scheduled_end": 160.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 160.62092771307837,
+            "scheduled_end": 165.62092771307837,
+            "scheduled_machine": "liquid_handler_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 165.62092771307837,
+            "scheduled_end": 166.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0025_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 177.8291829270414,
+            "scheduled_end": 189.8291829270414,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0026": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 117.97737311522165,
+            "scheduled_end": 122.97737311522165,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 122.98902664581934,
+            "scheduled_end": 123.98902664581934,
+            "scheduled_machine": "pre_reactor_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 166.62092771307837,
+            "scheduled_end": 167.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 167.62092771307837,
+            "scheduled_end": 168.62092771307837,
+            "scheduled_machine": "reactor_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 168.62092771307837,
+            "scheduled_end": 169.62092771307837,
+            "scheduled_machine": "cooling_chamber_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 171.8144351190883,
+            "scheduled_end": 172.8144351190883,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 172.8144351190883,
+            "scheduled_end": 177.8144351190883,
+            "scheduled_machine": "liquid_handler_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 177.8144351190883,
+            "scheduled_end": 178.8144351190883,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0026_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 192.50755997896638,
+            "scheduled_end": 204.50755997896638,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0027": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 120.64835320313772,
+            "scheduled_end": 125.64835320313772,
+            "scheduled_machine": "SPU_3"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 125.64835320313772,
+            "scheduled_end": 126.64835320313772,
+            "scheduled_machine": "pre_reactor_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 126.64835320313772,
+            "scheduled_end": 127.64835320313772,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 127.64835320313772,
+            "scheduled_end": 128.64835320313773,
+            "scheduled_machine": "reactor_12"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 128.64835320313773,
+            "scheduled_end": 129.64835320313773,
+            "scheduled_machine": "cooling_chamber_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 129.64835320313773,
+            "scheduled_end": 130.64835320313773,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 130.65722533861796,
+            "scheduled_end": 135.65722533861796,
+            "scheduled_machine": "liquid_handler_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 135.666839269797,
+            "scheduled_end": 136.666839269797,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0027_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 141.8291829270414,
+            "scheduled_end": 153.8291829270414,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0028": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 129.9783048470815,
+            "scheduled_end": 134.9783048470815,
+            "scheduled_machine": "SPU_2"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 134.98791877826054,
+            "scheduled_end": 135.98791877826054,
+            "scheduled_machine": "pre_reactor_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 161.62092771307837,
+            "scheduled_end": 162.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 162.62092771307837,
+            "scheduled_end": 164.5631892988517,
+            "scheduled_machine": "reactor_6"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 164.5631892988517,
+            "scheduled_end": 165.5631892988517,
+            "scheduled_machine": "cooling_chamber_F"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 167.62092771307837,
+            "scheduled_end": 168.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 168.62092771307837,
+            "scheduled_end": 173.62092771307837,
+            "scheduled_machine": "liquid_handler_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 173.62092771307837,
+            "scheduled_end": 174.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0028_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 189.8291829270414,
+            "scheduled_end": 201.8291829270414,
+            "scheduled_machine": "spectrometer_A"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      },
+      "e0_ERCFSS_noise_30pct_job_0029": {
+        "ops": [
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op0",
+            "op_index": 0,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 132.7187816182772,
+            "scheduled_end": 137.7187816182772,
+            "scheduled_machine": "SPU_1"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op1",
+            "op_index": 1,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 137.7187816182772,
+            "scheduled_end": 138.7187816182772,
+            "scheduled_machine": "pre_reactor_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op2",
+            "op_index": 2,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 146.62092771307837,
+            "scheduled_end": 147.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op3",
+            "op_index": 3,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 147.62092771307837,
+            "scheduled_end": 148.62092771307837,
+            "scheduled_machine": "reactor_10"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op4",
+            "op_index": 4,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 148.62092771307837,
+            "scheduled_end": 149.62092771307837,
+            "scheduled_machine": "cooling_chamber_C"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op5",
+            "op_index": 5,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 149.62092771307837,
+            "scheduled_end": 150.62092771307837,
+            "scheduled_machine": "robot_arm_B"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op6",
+            "op_index": 6,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 150.62092771307837,
+            "scheduled_end": 155.62092771307837,
+            "scheduled_machine": "liquid_handler_E"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op7",
+            "op_index": 7,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 155.62092771307837,
+            "scheduled_end": 156.62092771307837,
+            "scheduled_machine": "robot_arm_A"
+          },
+          {
+            "op_id": "e0_ERCFSS_noise_30pct_job_0029_op8",
+            "op_index": 8,
+            "is_completed": true,
+            "is_scheduled": true,
+            "scheduled_start": 168.50755997896638,
+            "scheduled_end": 180.50755997896638,
+            "scheduled_machine": "spectrometer_B"
+          }
+        ],
+        "completed": 9,
+        "scheduled": 9,
+        "total": 9
+      }
+    },
+    "tmax_violations": 0,
+    "total_solve_time": 13.667302370071411,
+    "total_time": 183.3370976448059,
+    "time_breakdown": {
+      "hla_decision": 0.0,
+      "scheduling": 0.0,
+      "time_advance": 0.0
+    },
+    "schedule_sequence": [
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op0",
+        "machine": "SPU_3",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op0",
+        "machine": "SPU_5",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op0",
+        "machine": "SPU_2",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op0",
+        "machine": "SPU_6",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op0",
+        "machine": "SPU_4",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 0.0016661485036214192,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op0",
+        "machine": "SPU_1",
+        "end": 5.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op0",
+        "machine": "SPU_3",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op0",
+        "machine": "SPU_5",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op1",
+        "machine": "pre_reactor_A",
+        "end": 6.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op1",
+        "machine": "pre_reactor_F",
+        "end": 6.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op1",
+        "machine": "pre_reactor_C",
+        "end": 6.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op1",
+        "machine": "pre_reactor_E",
+        "end": 6.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op1",
+        "machine": "pre_reactor_B",
+        "end": 6.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op0",
+        "machine": "SPU_2",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op0",
+        "machine": "SPU_4",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op0",
+        "machine": "SPU_1",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 5.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op0",
+        "machine": "SPU_6",
+        "end": 10.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 6.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op2",
+        "machine": "robot_arm_B",
+        "end": 7.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 6.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op1",
+        "machine": "pre_reactor_A",
+        "end": 7.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 6.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op2",
+        "machine": "robot_arm_A",
+        "end": 7.001666148503621
+      },
+      {
+        "step": 0,
+        "start": 7.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op3",
+        "machine": "reactor_10",
+        "end": 13.72721314850362
+      },
+      {
+        "step": 0,
+        "start": 7.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op2",
+        "machine": "robot_arm_A",
+        "end": 8.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 7.001666148503621,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op3",
+        "machine": "reactor_1",
+        "end": 12.50090114850362
+      },
+      {
+        "step": 0,
+        "start": 8.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op3",
+        "machine": "reactor_11",
+        "end": 12.800845148503619
+      },
+      {
+        "step": 0,
+        "start": 10.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op1",
+        "machine": "pre_reactor_C",
+        "end": 11.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 10.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op1",
+        "machine": "pre_reactor_D",
+        "end": 11.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 10.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op1",
+        "machine": "pre_reactor_E",
+        "end": 11.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 10.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op1",
+        "machine": "pre_reactor_B",
+        "end": 11.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 10.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op1",
+        "machine": "pre_reactor_F",
+        "end": 11.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 11.00166614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op1",
+        "machine": "pre_reactor_B",
+        "end": 12.00166614850362
+      },
+      {
+        "step": 0,
+        "start": 12.50090114850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op4",
+        "machine": "cooling_chamber_C",
+        "end": 13.50090114850362
+      },
+      {
+        "step": 0,
+        "start": 12.800845148503619,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op4",
+        "machine": "cooling_chamber_B",
+        "end": 13.800845148503619
+      },
+      {
+        "step": 0,
+        "start": 13.72721314850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op4",
+        "machine": "cooling_chamber_A",
+        "end": 14.72721314850362
+      },
+      {
+        "step": 0,
+        "start": 13.800845148503619,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op5",
+        "machine": "robot_arm_A",
+        "end": 14.800845148503619
+      },
+      {
+        "step": 0,
+        "start": 14.72721314850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op5",
+        "machine": "robot_arm_B",
+        "end": 15.72721314850362
+      },
+      {
+        "step": 0,
+        "start": 14.800845148503619,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op6",
+        "machine": "liquid_handler_C",
+        "end": 19.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 14.800845148503619,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op5",
+        "machine": "robot_arm_A",
+        "end": 15.800845148503619
+      },
+      {
+        "step": 0,
+        "start": 15.72721314850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op6",
+        "machine": "liquid_handler_B",
+        "end": 20.727213148503623
+      },
+      {
+        "step": 0,
+        "start": 15.72721314850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op2",
+        "machine": "robot_arm_B",
+        "end": 16.727213148503623
+      },
+      {
+        "step": 0,
+        "start": 15.800845148503619,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op6",
+        "machine": "liquid_handler_A",
+        "end": 20.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 16.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op3",
+        "machine": "reactor_12",
+        "end": 18.93424214850362
+      },
+      {
+        "step": 0,
+        "start": 18.93424214850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op4",
+        "machine": "cooling_chamber_D",
+        "end": 19.93424214850362
+      },
+      {
+        "step": 0,
+        "start": 20.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op7",
+        "machine": "robot_arm_B",
+        "end": 21.727213148503623
+      },
+      {
+        "step": 0,
+        "start": 20.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op7",
+        "machine": "robot_arm_A",
+        "end": 21.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 21.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0002_op8",
+        "machine": "spectrometer_A",
+        "end": 33.72721314850362
+      },
+      {
+        "step": 0,
+        "start": 21.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op7",
+        "machine": "robot_arm_B",
+        "end": 22.727213148503623
+      },
+      {
+        "step": 0,
+        "start": 21.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op5",
+        "machine": "robot_arm_A",
+        "end": 22.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 21.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0007_op8",
+        "machine": "spectrometer_B",
+        "end": 33.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 22.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op2",
+        "machine": "robot_arm_B",
+        "end": 23.727213148503623
+      },
+      {
+        "step": 0,
+        "start": 22.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op6",
+        "machine": "liquid_handler_D",
+        "end": 27.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 22.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op2",
+        "machine": "robot_arm_A",
+        "end": 23.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 23.727213148503623,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op3",
+        "machine": "reactor_2",
+        "end": 28.05157614850362
+      },
+      {
+        "step": 0,
+        "start": 23.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op3",
+        "machine": "reactor_3",
+        "end": 28.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 27.80084514850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op7",
+        "machine": "robot_arm_B",
+        "end": 28.80084514850362
+      },
+      {
+        "step": 0,
+        "start": 28.03058914850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op4",
+        "machine": "cooling_chamber_E",
+        "end": 29.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 28.05157614850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op4",
+        "machine": "cooling_chamber_F",
+        "end": 29.05157614850362
+      },
+      {
+        "step": 0,
+        "start": 29.03058914850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op5",
+        "machine": "robot_arm_A",
+        "end": 30.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 30.03058914850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op5",
+        "machine": "robot_arm_A",
+        "end": 31.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 30.03058914850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op6",
+        "machine": "liquid_handler_E",
+        "end": 35.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 31.03058914850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op6",
+        "machine": "liquid_handler_F",
+        "end": 36.03058914850362
+      },
+      {
+        "step": 0,
+        "start": 33.72721314850362,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0004_op8",
+        "machine": "spectrometer_A",
+        "end": 45.72721314850362
+      },
+      {
+        "step": 0,
+        "start": 33.77241638501486,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op0",
+        "machine": "SPU_1",
+        "end": 38.77241638501486
+      },
+      {
+        "step": 0,
+        "start": 33.81006302668635,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0005_op8",
+        "machine": "spectrometer_B",
+        "end": 45.81006302668635
+      },
+      {
+        "step": 0,
+        "start": 33.85987850824993,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op0",
+        "machine": "SPU_2",
+        "end": 38.85987850824993
+      },
+      {
+        "step": 0,
+        "start": 35.041301148237864,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op7",
+        "machine": "robot_arm_A",
+        "end": 36.041301148237864
+      },
+      {
+        "step": 0,
+        "start": 36.041301148237864,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op7",
+        "machine": "robot_arm_B",
+        "end": 37.041301148237864
+      },
+      {
+        "step": 0,
+        "start": 38.7831283847491,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op1",
+        "machine": "pre_reactor_D",
+        "end": 39.7831283847491
+      },
+      {
+        "step": 0,
+        "start": 38.85987850824993,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op1",
+        "machine": "pre_reactor_C",
+        "end": 39.85987850824993
+      },
+      {
+        "step": 0,
+        "start": 39.85987850824993,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op2",
+        "machine": "robot_arm_A",
+        "end": 40.85987850824993
+      },
+      {
+        "step": 0,
+        "start": 40.85987850824993,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op3",
+        "machine": "reactor_10",
+        "end": 45.399859353326775
+      },
+      {
+        "step": 0,
+        "start": 45.399859353326775,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op4",
+        "machine": "cooling_chamber_A",
+        "end": 46.399859353326775
+      },
+      {
+        "step": 0,
+        "start": 45.73792514823786,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0001_op8",
+        "machine": "spectrometer_A",
+        "end": 57.73792514823786
+      },
+      {
+        "step": 0,
+        "start": 45.78715428113939,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op2",
+        "machine": "robot_arm_A",
+        "end": 46.78715428113939
+      },
+      {
+        "step": 0,
+        "start": 45.78715428113939,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op0",
+        "machine": "SPU_1",
+        "end": 50.78715428113939
+      },
+      {
+        "step": 0,
+        "start": 45.820765628754934,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0009_op8",
+        "machine": "spectrometer_B",
+        "end": 57.820765628754934
+      },
+      {
+        "step": 0,
+        "start": 45.880370926857005,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op0",
+        "machine": "SPU_2",
+        "end": 50.880370926857005
+      },
+      {
+        "step": 0,
+        "start": 46.41297570906382,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op5",
+        "machine": "robot_arm_B",
+        "end": 47.41297570906382
+      },
+      {
+        "step": 0,
+        "start": 46.800270636876434,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op3",
+        "machine": "reactor_2",
+        "end": 48.77455663687643
+      },
+      {
+        "step": 0,
+        "start": 47.41297570906382,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op2",
+        "machine": "robot_arm_B",
+        "end": 48.41297570906382
+      },
+      {
+        "step": 0,
+        "start": 47.41297570906382,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op6",
+        "machine": "liquid_handler_A",
+        "end": 52.41297570906382
+      },
+      {
+        "step": 0,
+        "start": 48.41297570906382,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op3",
+        "machine": "reactor_3",
+        "end": 55.923865709063826
+      },
+      {
+        "step": 0,
+        "start": 48.77455663687643,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op4",
+        "machine": "cooling_chamber_B",
+        "end": 49.77455663687643
+      },
+      {
+        "step": 0,
+        "start": 49.77455663687643,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op5",
+        "machine": "robot_arm_B",
+        "end": 50.77455663687643
+      },
+      {
+        "step": 0,
+        "start": 50.77455663687643,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op6",
+        "machine": "liquid_handler_B",
+        "end": 55.77455663687643
+      },
+      {
+        "step": 0,
+        "start": 50.800270636876434,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op1",
+        "machine": "pre_reactor_E",
+        "end": 51.800270636876434
+      },
+      {
+        "step": 0,
+        "start": 50.880370926857005,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op1",
+        "machine": "pre_reactor_F",
+        "end": 51.880370926857005
+      },
+      {
+        "step": 0,
+        "start": 52.41297570906382,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op7",
+        "machine": "robot_arm_A",
+        "end": 53.41297570906382
+      },
+      {
+        "step": 0,
+        "start": 55.77455663687643,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op7",
+        "machine": "robot_arm_B",
+        "end": 56.77455663687643
+      },
+      {
+        "step": 0,
+        "start": 55.923865709063826,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op4",
+        "machine": "cooling_chamber_C",
+        "end": 56.923865709063826
+      },
+      {
+        "step": 0,
+        "start": 56.923865709063826,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op5",
+        "machine": "robot_arm_A",
+        "end": 57.923865709063826
+      },
+      {
+        "step": 0,
+        "start": 57.75104150397491,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0013_op8",
+        "machine": "spectrometer_A",
+        "end": 69.75104150397492
+      },
+      {
+        "step": 0,
+        "start": 57.83388198449198,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0003_op8",
+        "machine": "spectrometer_B",
+        "end": 69.833881984492
+      },
+      {
+        "step": 0,
+        "start": 57.87267461617789,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op2",
+        "machine": "robot_arm_B",
+        "end": 58.87267461617789
+      },
+      {
+        "step": 0,
+        "start": 57.87267461617789,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op0",
+        "machine": "SPU_1",
+        "end": 62.87267461617789
+      },
+      {
+        "step": 0,
+        "start": 57.934379034596105,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op6",
+        "machine": "liquid_handler_A",
+        "end": 62.934379034596105
+      },
+      {
+        "step": 0,
+        "start": 58.01544436216355,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op0",
+        "machine": "SPU_2",
+        "end": 63.01544436216355
+      },
+      {
+        "step": 0,
+        "start": 58.88503691355388,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op3",
+        "machine": "reactor_12",
+        "end": 60.15924591355388
+      },
+      {
+        "step": 0,
+        "start": 60.15924591355388,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op4",
+        "machine": "cooling_chamber_A",
+        "end": 61.15924591355388
+      },
+      {
+        "step": 0,
+        "start": 61.15924591355388,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op5",
+        "machine": "robot_arm_B",
+        "end": 62.15924591355388
+      },
+      {
+        "step": 0,
+        "start": 62.15924591355388,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op6",
+        "machine": "liquid_handler_B",
+        "end": 67.15924591355389
+      },
+      {
+        "step": 0,
+        "start": 62.88503691355388,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op1",
+        "machine": "pre_reactor_C",
+        "end": 63.88503691355388
+      },
+      {
+        "step": 0,
+        "start": 62.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op7",
+        "machine": "robot_arm_A",
+        "end": 63.9467413319721
+      },
+      {
+        "step": 0,
+        "start": 63.01544436216355,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op1",
+        "machine": "pre_reactor_A",
+        "end": 64.01544436216355
+      },
+      {
+        "step": 0,
+        "start": 63.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op2",
+        "machine": "robot_arm_A",
+        "end": 64.9467413319721
+      },
+      {
+        "step": 0,
+        "start": 64.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op3",
+        "machine": "reactor_4",
+        "end": 71.18630305351422
+      },
+      {
+        "step": 0,
+        "start": 64.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op2",
+        "machine": "robot_arm_A",
+        "end": 65.9467413319721
+      },
+      {
+        "step": 0,
+        "start": 65.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op2",
+        "machine": "robot_arm_A",
+        "end": 66.9467413319721
+      },
+      {
+        "step": 0,
+        "start": 65.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op3",
+        "machine": "reactor_5",
+        "end": 71.09078000797199
+      },
+      {
+        "step": 0,
+        "start": 66.9467413319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op3",
+        "machine": "reactor_6",
+        "end": 69.4272403319721
+      },
+      {
+        "step": 0,
+        "start": 67.15924591355389,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op7",
+        "machine": "robot_arm_B",
+        "end": 68.15924591355389
+      },
+      {
+        "step": 0,
+        "start": 69.4272403319721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op4",
+        "machine": "cooling_chamber_B",
+        "end": 70.4272403319721
+      },
+      {
+        "step": 0,
+        "start": 69.76340380135092,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0011_op8",
+        "machine": "spectrometer_A",
+        "end": 81.76340380135092
+      },
+      {
+        "step": 0,
+        "start": 69.846244281868,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0006_op8",
+        "machine": "spectrometer_B",
+        "end": 81.846244281868
+      },
+      {
+        "step": 0,
+        "start": 69.88722528219223,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op0",
+        "machine": "SPU_1",
+        "end": 74.88722528219223
+      },
+      {
+        "step": 0,
+        "start": 70.43686665296997,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op5",
+        "machine": "robot_arm_A",
+        "end": 71.43686665296997
+      },
+      {
+        "step": 0,
+        "start": 70.5130831638972,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op0",
+        "machine": "SPU_2",
+        "end": 75.5130831638972
+      },
+      {
+        "step": 0,
+        "start": 71.10258637282617,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op4",
+        "machine": "cooling_chamber_B",
+        "end": 72.10258637282617
+      },
+      {
+        "step": 0,
+        "start": 71.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op4",
+        "machine": "cooling_chamber_A",
+        "end": 72.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 71.44867301782415,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op6",
+        "machine": "liquid_handler_A",
+        "end": 76.44867301782415
+      },
+      {
+        "step": 0,
+        "start": 72.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op5",
+        "machine": "robot_arm_A",
+        "end": 73.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 73.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op6",
+        "machine": "liquid_handler_B",
+        "end": 78.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 74.89903164704641,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op1",
+        "machine": "pre_reactor_E",
+        "end": 75.89903164704641
+      },
+      {
+        "step": 0,
+        "start": 75.5130831638972,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op1",
+        "machine": "pre_reactor_F",
+        "end": 76.5130831638972
+      },
+      {
+        "step": 0,
+        "start": 76.44867301782415,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op7",
+        "machine": "robot_arm_B",
+        "end": 77.44867301782415
+      },
+      {
+        "step": 0,
+        "start": 77.44867301782415,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op5",
+        "machine": "robot_arm_B",
+        "end": 78.44867301782415
+      },
+      {
+        "step": 0,
+        "start": 78.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op7",
+        "machine": "robot_arm_A",
+        "end": 79.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 78.44867301782415,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op6",
+        "machine": "liquid_handler_C",
+        "end": 83.44867301782415
+      },
+      {
+        "step": 0,
+        "start": 79.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op2",
+        "machine": "robot_arm_A",
+        "end": 80.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 80.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op3",
+        "machine": "reactor_10",
+        "end": 83.2565914183684
+      },
+      {
+        "step": 0,
+        "start": 80.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op2",
+        "machine": "robot_arm_A",
+        "end": 81.1981094183684
+      },
+      {
+        "step": 0,
+        "start": 81.1981094183684,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op3",
+        "machine": "reactor_11",
+        "end": 84.0596064183684
+      },
+      {
+        "step": 0,
+        "start": 81.7752101662051,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0010_op8",
+        "machine": "spectrometer_A",
+        "end": 93.7752101662051
+      },
+      {
+        "step": 0,
+        "start": 81.8385023991267,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op0",
+        "machine": "SPU_1",
+        "end": 86.8385023991267
+      },
+      {
+        "step": 0,
+        "start": 83.26643024581948,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op4",
+        "machine": "cooling_chamber_A",
+        "end": 84.26643024581948
+      },
+      {
+        "step": 0,
+        "start": 83.31348094145459,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op0",
+        "machine": "SPU_3",
+        "end": 88.31348094145459
+      },
+      {
+        "step": 0,
+        "start": 83.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op7",
+        "machine": "robot_arm_A",
+        "end": 84.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 84.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op4",
+        "machine": "cooling_chamber_B",
+        "end": 85.0711386932504
+      },
+      {
+        "step": 0,
+        "start": 84.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op5",
+        "machine": "robot_arm_A",
+        "end": 85.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 84.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0016_op8",
+        "machine": "spectrometer_B",
+        "end": 96.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 85.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op5",
+        "machine": "robot_arm_B",
+        "end": 86.0711386932504
+      },
+      {
+        "step": 0,
+        "start": 85.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op6",
+        "machine": "liquid_handler_A",
+        "end": 90.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 86.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op6",
+        "machine": "liquid_handler_B",
+        "end": 91.0711386932504
+      },
+      {
+        "step": 0,
+        "start": 86.8500346740087,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op1",
+        "machine": "pre_reactor_C",
+        "end": 87.8500346740087
+      },
+      {
+        "step": 0,
+        "start": 88.31348094145459,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op1",
+        "machine": "pre_reactor_A",
+        "end": 89.31348094145459
+      },
+      {
+        "step": 0,
+        "start": 90.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op7",
+        "machine": "robot_arm_A",
+        "end": 91.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 91.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op7",
+        "machine": "robot_arm_B",
+        "end": 92.0711386932504
+      },
+      {
+        "step": 0,
+        "start": 91.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op2",
+        "machine": "robot_arm_A",
+        "end": 92.46020529270615
+      },
+      {
+        "step": 0,
+        "start": 92.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op2",
+        "machine": "robot_arm_B",
+        "end": 93.0711386932504
+      },
+      {
+        "step": 0,
+        "start": 92.46020529270615,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op3",
+        "machine": "reactor_12",
+        "end": 94.23633886551511
+      },
+      {
+        "step": 0,
+        "start": 93.0711386932504,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op3",
+        "machine": "reactor_2",
+        "end": 98.57037358902808
+      },
+      {
+        "step": 0,
+        "start": 93.7867424410871,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0015_op8",
+        "machine": "spectrometer_A",
+        "end": 105.7867424410871
+      },
+      {
+        "step": 0,
+        "start": 93.8600133419037,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op0",
+        "machine": "SPU_2",
+        "end": 98.8600133419037
+      },
+      {
+        "step": 0,
+        "start": 94.24603009994479,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op4",
+        "machine": "cooling_chamber_A",
+        "end": 95.24603009994479
+      },
+      {
+        "step": 0,
+        "start": 95.24603009994479,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op5",
+        "machine": "robot_arm_A",
+        "end": 96.24603009994479
+      },
+      {
+        "step": 0,
+        "start": 96.24603009994479,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op6",
+        "machine": "liquid_handler_A",
+        "end": 101.24603009994479
+      },
+      {
+        "step": 0,
+        "start": 96.46989652713583,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0000_op8",
+        "machine": "spectrometer_B",
+        "end": 108.46989652713583
+      },
+      {
+        "step": 0,
+        "start": 96.60751830736795,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op0",
+        "machine": "SPU_1",
+        "end": 101.60751830736795
+      },
+      {
+        "step": 0,
+        "start": 98.58098165813004,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op4",
+        "machine": "cooling_chamber_A",
+        "end": 99.58098165813004
+      },
+      {
+        "step": 0,
+        "start": 98.87062141100566,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op1",
+        "machine": "pre_reactor_F",
+        "end": 99.87062141100566
+      },
+      {
+        "step": 0,
+        "start": 99.58098165813004,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op5",
+        "machine": "robot_arm_B",
+        "end": 100.58098165813004
+      },
+      {
+        "step": 0,
+        "start": 100.58098165813004,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op6",
+        "machine": "liquid_handler_B",
+        "end": 105.58098165813004
+      },
+      {
+        "step": 0,
+        "start": 101.25663816904675,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op7",
+        "machine": "robot_arm_A",
+        "end": 102.25663816904675
+      },
+      {
+        "step": 0,
+        "start": 101.60751830736795,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op1",
+        "machine": "pre_reactor_E",
+        "end": 102.60751830736795
+      },
+      {
+        "step": 0,
+        "start": 102.25663816904675,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op2",
+        "machine": "robot_arm_A",
+        "end": 103.25663816904675
+      },
+      {
+        "step": 0,
+        "start": 103.25663816904675,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op3",
+        "machine": "reactor_10",
+        "end": 105.24630681569354
+      },
+      {
+        "step": 0,
+        "start": 103.25663816904675,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op2",
+        "machine": "robot_arm_A",
+        "end": 104.25663816904675
+      },
+      {
+        "step": 0,
+        "start": 104.25663816904675,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op3",
+        "machine": "reactor_3",
+        "end": 111.69198391406469
+      },
+      {
+        "step": 0,
+        "start": 105.24630681569354,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op4",
+        "machine": "cooling_chamber_B",
+        "end": 106.24630681569354
+      },
+      {
+        "step": 0,
+        "start": 105.58098165813004,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op7",
+        "machine": "robot_arm_B",
+        "end": 106.58098165813004
+      },
+      {
+        "step": 0,
+        "start": 105.79735051018906,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0008_op8",
+        "machine": "spectrometer_A",
+        "end": 117.79735051018906
+      },
+      {
+        "step": 0,
+        "start": 106.01250730355581,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op0",
+        "machine": "SPU_3",
+        "end": 111.01250730355581
+      },
+      {
+        "step": 0,
+        "start": 106.25544958407657,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op5",
+        "machine": "robot_arm_A",
+        "end": 107.25544958407657
+      },
+      {
+        "step": 0,
+        "start": 107.25544958407657,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op6",
+        "machine": "liquid_handler_A",
+        "end": 112.25544958407657
+      },
+      {
+        "step": 0,
+        "start": 108.47903929551886,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0014_op8",
+        "machine": "spectrometer_B",
+        "end": 120.47903929551886
+      },
+      {
+        "step": 0,
+        "start": 108.56522952715555,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op0",
+        "machine": "SPU_2",
+        "end": 113.56522952715555
+      },
+      {
+        "step": 0,
+        "start": 111.02307225863139,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op1",
+        "machine": "pre_reactor_C",
+        "end": 112.02307225863139
+      },
+      {
+        "step": 0,
+        "start": 111.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op4",
+        "machine": "cooling_chamber_A",
+        "end": 112.70254886914027
+      },
+      {
+        "step": 0,
+        "start": 112.26601453915215,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op7",
+        "machine": "robot_arm_A",
+        "end": 113.26601453915215
+      },
+      {
+        "step": 0,
+        "start": 112.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op5",
+        "machine": "robot_arm_B",
+        "end": 113.70254886914027
+      },
+      {
+        "step": 0,
+        "start": 113.56522952715555,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op1",
+        "machine": "pre_reactor_A",
+        "end": 114.56522952715555
+      },
+      {
+        "step": 0,
+        "start": 113.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op2",
+        "machine": "robot_arm_B",
+        "end": 114.70254886914027
+      },
+      {
+        "step": 0,
+        "start": 113.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op6",
+        "machine": "liquid_handler_B",
+        "end": 118.70254886914027
+      },
+      {
+        "step": 0,
+        "start": 114.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op3",
+        "machine": "reactor_1",
+        "end": 120.94669071563182
+      },
+      {
+        "step": 0,
+        "start": 114.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op2",
+        "machine": "robot_arm_B",
+        "end": 115.70254886914027
+      },
+      {
+        "step": 0,
+        "start": 115.70254886914027,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op3",
+        "machine": "reactor_11",
+        "end": 125.15169965157439
+      },
+      {
+        "step": 0,
+        "start": 117.80791546526464,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0018_op8",
+        "machine": "spectrometer_A",
+        "end": 129.80791546526464
+      },
+      {
+        "step": 0,
+        "start": 117.97737311522165,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op0",
+        "machine": "SPU_1",
+        "end": 122.97737311522165
+      },
+      {
+        "step": 0,
+        "start": 118.7125834859285,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op7",
+        "machine": "robot_arm_A",
+        "end": 119.7125834859285
+      },
+      {
+        "step": 0,
+        "start": 120.48907391230709,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0020_op8",
+        "machine": "spectrometer_B",
+        "end": 132.4890739123071
+      },
+      {
+        "step": 0,
+        "start": 120.64835320313772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op0",
+        "machine": "SPU_3",
+        "end": 125.64835320313772
+      },
+      {
+        "step": 0,
+        "start": 120.9583442462295,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op4",
+        "machine": "cooling_chamber_B",
+        "end": 121.9583442462295
+      },
+      {
+        "step": 0,
+        "start": 121.9583442462295,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op5",
+        "machine": "robot_arm_A",
+        "end": 122.9583442462295
+      },
+      {
+        "step": 0,
+        "start": 122.9583442462295,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op6",
+        "machine": "liquid_handler_A",
+        "end": 127.9583442462295
+      },
+      {
+        "step": 0,
+        "start": 122.98902664581934,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op1",
+        "machine": "pre_reactor_F",
+        "end": 123.98902664581934
+      },
+      {
+        "step": 0,
+        "start": 125.16335318217207,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op4",
+        "machine": "cooling_chamber_A",
+        "end": 126.16335318217207
+      },
+      {
+        "step": 0,
+        "start": 125.64835320313772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op1",
+        "machine": "pre_reactor_E",
+        "end": 126.64835320313772
+      },
+      {
+        "step": 0,
+        "start": 126.16335318217207,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op5",
+        "machine": "robot_arm_B",
+        "end": 127.16335318217207
+      },
+      {
+        "step": 0,
+        "start": 126.64835320313772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op2",
+        "machine": "robot_arm_A",
+        "end": 127.64835320313772
+      },
+      {
+        "step": 0,
+        "start": 127.16335318217207,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op2",
+        "machine": "robot_arm_B",
+        "end": 128.1633531821721
+      },
+      {
+        "step": 0,
+        "start": 127.16335318217207,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op6",
+        "machine": "liquid_handler_B",
+        "end": 132.1633531821721
+      },
+      {
+        "step": 0,
+        "start": 127.64835320313772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op2",
+        "machine": "robot_arm_A",
+        "end": 128.64835320313773
+      },
+      {
+        "step": 0,
+        "start": 127.64835320313772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op3",
+        "machine": "reactor_12",
+        "end": 128.64835320313773
+      },
+      {
+        "step": 0,
+        "start": 128.1633531821721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op3",
+        "machine": "reactor_2",
+        "end": 131.13404873086296
+      },
+      {
+        "step": 0,
+        "start": 128.1633531821721,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op7",
+        "machine": "robot_arm_B",
+        "end": 129.1633531821721
+      },
+      {
+        "step": 0,
+        "start": 128.64835320313773,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op3",
+        "machine": "reactor_4",
+        "end": 138.61131378189933
+      },
+      {
+        "step": 0,
+        "start": 128.64835320313773,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op4",
+        "machine": "cooling_chamber_C",
+        "end": 129.64835320313773
+      },
+      {
+        "step": 0,
+        "start": 129.64835320313773,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op5",
+        "machine": "robot_arm_B",
+        "end": 130.64835320313773
+      },
+      {
+        "step": 0,
+        "start": 129.81956899586234,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0023_op8",
+        "machine": "spectrometer_A",
+        "end": 141.81956899586234
+      },
+      {
+        "step": 0,
+        "start": 129.9783048470815,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op0",
+        "machine": "SPU_2",
+        "end": 134.9783048470815
+      },
+      {
+        "step": 0,
+        "start": 130.65722533861796,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op6",
+        "machine": "liquid_handler_A",
+        "end": 135.65722533861796
+      },
+      {
+        "step": 0,
+        "start": 131.1429208663432,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op4",
+        "machine": "cooling_chamber_A",
+        "end": 132.1429208663432
+      },
+      {
+        "step": 0,
+        "start": 132.1429208663432,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op5",
+        "machine": "robot_arm_B",
+        "end": 133.1429208663432
+      },
+      {
+        "step": 0,
+        "start": 132.17222531765233,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op7",
+        "machine": "robot_arm_A",
+        "end": 133.17222531765233
+      },
+      {
+        "step": 0,
+        "start": 132.49794604778734,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0017_op8",
+        "machine": "spectrometer_B",
+        "end": 144.49794604778734
+      },
+      {
+        "step": 0,
+        "start": 132.7187816182772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op0",
+        "machine": "SPU_1",
+        "end": 137.7187816182772
+      },
+      {
+        "step": 0,
+        "start": 133.15253479752224,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op6",
+        "machine": "liquid_handler_B",
+        "end": 138.15253479752224
+      },
+      {
+        "step": 0,
+        "start": 134.98791877826054,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op1",
+        "machine": "pre_reactor_C",
+        "end": 135.98791877826054
+      },
+      {
+        "step": 0,
+        "start": 135.666839269797,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op7",
+        "machine": "robot_arm_B",
+        "end": 136.666839269797
+      },
+      {
+        "step": 0,
+        "start": 137.7187816182772,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op1",
+        "machine": "pre_reactor_A",
+        "end": 138.7187816182772
+      },
+      {
+        "step": 0,
+        "start": 138.15253479752224,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op7",
+        "machine": "robot_arm_B",
+        "end": 139.15253479752224
+      },
+      {
+        "step": 0,
+        "start": 138.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op4",
+        "machine": "cooling_chamber_A",
+        "end": 139.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 139.15253479752224,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op2",
+        "machine": "robot_arm_B",
+        "end": 140.15253479752224
+      },
+      {
+        "step": 0,
+        "start": 139.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op5",
+        "machine": "robot_arm_A",
+        "end": 140.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 140.15253479752224,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op3",
+        "machine": "reactor_12",
+        "end": 142.4403697753726
+      },
+      {
+        "step": 0,
+        "start": 140.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op6",
+        "machine": "liquid_handler_C",
+        "end": 145.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 141.8291829270414,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0027_op8",
+        "machine": "spectrometer_A",
+        "end": 153.8291829270414
+      },
+      {
+        "step": 0,
+        "start": 142.4403697753726,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op4",
+        "machine": "cooling_chamber_B",
+        "end": 143.4403697753726
+      },
+      {
+        "step": 0,
+        "start": 143.4403697753726,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op5",
+        "machine": "robot_arm_A",
+        "end": 144.4403697753726
+      },
+      {
+        "step": 0,
+        "start": 144.4403697753726,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op6",
+        "machine": "liquid_handler_D",
+        "end": 149.4403697753726
+      },
+      {
+        "step": 0,
+        "start": 144.50755997896638,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0021_op8",
+        "machine": "spectrometer_B",
+        "end": 156.50755997896638
+      },
+      {
+        "step": 0,
+        "start": 145.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op7",
+        "machine": "robot_arm_B",
+        "end": 146.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 146.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op2",
+        "machine": "robot_arm_B",
+        "end": 147.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 147.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op2",
+        "machine": "robot_arm_B",
+        "end": 148.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 147.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op3",
+        "machine": "reactor_10",
+        "end": 148.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 148.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op3",
+        "machine": "reactor_3",
+        "end": 158.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 148.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op4",
+        "machine": "cooling_chamber_C",
+        "end": 149.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 149.4403697753726,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op7",
+        "machine": "robot_arm_A",
+        "end": 150.4403697753726
+      },
+      {
+        "step": 0,
+        "start": 149.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op5",
+        "machine": "robot_arm_B",
+        "end": 150.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 150.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op6",
+        "machine": "liquid_handler_E",
+        "end": 155.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 153.8291829270414,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0012_op8",
+        "machine": "spectrometer_A",
+        "end": 165.8291829270414
+      },
+      {
+        "step": 0,
+        "start": 155.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op7",
+        "machine": "robot_arm_A",
+        "end": 156.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 156.50755997896638,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0022_op8",
+        "machine": "spectrometer_B",
+        "end": 168.50755997896638
+      },
+      {
+        "step": 0,
+        "start": 158.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op4",
+        "machine": "cooling_chamber_D",
+        "end": 159.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 159.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op5",
+        "machine": "robot_arm_B",
+        "end": 160.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 160.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op2",
+        "machine": "robot_arm_B",
+        "end": 161.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 160.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op6",
+        "machine": "liquid_handler_F",
+        "end": 165.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 161.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op3",
+        "machine": "reactor_5",
+        "end": 163.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 161.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op2",
+        "machine": "robot_arm_B",
+        "end": 162.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 162.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op3",
+        "machine": "reactor_6",
+        "end": 164.5631892988517
+      },
+      {
+        "step": 0,
+        "start": 163.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op4",
+        "machine": "cooling_chamber_E",
+        "end": 164.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 164.5631892988517,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op4",
+        "machine": "cooling_chamber_F",
+        "end": 165.5631892988517
+      },
+      {
+        "step": 0,
+        "start": 164.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op5",
+        "machine": "robot_arm_B",
+        "end": 165.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 165.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op7",
+        "machine": "robot_arm_A",
+        "end": 166.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 165.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op6",
+        "machine": "liquid_handler_A",
+        "end": 170.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 165.8291829270414,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0019_op8",
+        "machine": "spectrometer_A",
+        "end": 177.8291829270414
+      },
+      {
+        "step": 0,
+        "start": 166.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op2",
+        "machine": "robot_arm_A",
+        "end": 167.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 167.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op3",
+        "machine": "reactor_2",
+        "end": 168.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 167.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op5",
+        "machine": "robot_arm_A",
+        "end": 168.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 168.50755997896638,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0029_op8",
+        "machine": "spectrometer_B",
+        "end": 180.50755997896638
+      },
+      {
+        "step": 0,
+        "start": 168.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op4",
+        "machine": "cooling_chamber_A",
+        "end": 169.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 168.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op6",
+        "machine": "liquid_handler_B",
+        "end": 173.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 170.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op7",
+        "machine": "robot_arm_B",
+        "end": 171.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 171.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op5",
+        "machine": "robot_arm_B",
+        "end": 172.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 172.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op6",
+        "machine": "liquid_handler_C",
+        "end": 177.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 173.62092771307837,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op7",
+        "machine": "robot_arm_A",
+        "end": 174.62092771307837
+      },
+      {
+        "step": 0,
+        "start": 177.8144351190883,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op7",
+        "machine": "robot_arm_B",
+        "end": 178.8144351190883
+      },
+      {
+        "step": 0,
+        "start": 177.8291829270414,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0025_op8",
+        "machine": "spectrometer_A",
+        "end": 189.8291829270414
+      },
+      {
+        "step": 0,
+        "start": 180.50755997896638,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0024_op8",
+        "machine": "spectrometer_B",
+        "end": 192.50755997896638
+      },
+      {
+        "step": 0,
+        "start": 189.8291829270414,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0028_op8",
+        "machine": "spectrometer_A",
+        "end": 201.8291829270414
+      },
+      {
+        "step": 0,
+        "start": 192.50755997896638,
+        "op_id": "e0_ERCFSS_noise_30pct_job_0026_op8",
+        "machine": "spectrometer_B",
+        "end": 204.50755997896638
+      }
+    ],
+    "release_history": []
+  }
+}

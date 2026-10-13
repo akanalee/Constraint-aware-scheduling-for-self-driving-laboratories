@@ -1,0 +1,114 @@
+env_config:
+  n_jobs: 40
+  buffer_size: 100
+
+  tmax_constraints:
+    - {from_step: "S3", to_step: "S4", max_interval: 10}
+    - {from_step: "S4", to_step: "S6", max_interval: 30.0}
+    - {from_step: "S4", to_step: "S7", max_interval: 30.0}
+    - {from_step: "S2", to_step: "S3", max_interval: 10}
+
+process_steps:
+  S1_substrate_prep:
+    name: "Substrate Preparation"
+    machines:
+      - { id: "SPU_1",  type: "substrate_processor", capacity: 1 }
+      - { id: "SPU_2",  type: "substrate_processor", capacity: 1 }
+      - { id: "SPU_3",  type: "substrate_processor", capacity: 1 }
+      - { id: "SPU_4",  type: "substrate_processor", capacity: 1 }
+      - { id: "SPU_5",  type: "substrate_processor", capacity: 1 }
+      - { id: "SPU_6",  type: "substrate_processor", capacity: 1 }
+    processing_time:
+      base: 2.5
+      std: 0.5
+      distribution: "normal"
+
+  S2_robotic_transfer:
+    name: "Robotic Transfer"
+    machines:
+      - { id: "robot_arm_A", type: "6dof_robot", capacity: 1 }
+      - { id: "robot_arm_B", type: "6dof_robot", capacity: 1 }
+    processing_time:
+      base: 1.0
+      std: 0.1
+      distribution: "normal"
+
+  S3_pre_reaction:
+    name: "Pre-reaction Treatment"
+    machines:
+      - { id: "pre_reactor_A", type: "pre_reactor", capacity: 1 }
+      - { id: "pre_reactor_B", type: "pre_reactor", capacity: 1 }
+      - { id: "pre_reactor_C", type: "pre_reactor", capacity: 1 }
+      - { id: "pre_reactor_D", type: "pre_reactor", capacity: 1 }
+      - { id: "pre_reactor_E", type: "pre_reactor", capacity: 1 }
+      - { id: "pre_reactor_F", type: "pre_reactor", capacity: 1 }
+    processing_time:
+      base: 5.0
+      std: 1.5
+      distribution: "normal"
+
+  S4_reactor:
+    name: "Reaction"
+    machines:
+      - { id: "reactor_1",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_2",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_3",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_4",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_5",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_6",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_7",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_8",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_9",  type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_10", type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_11", type: "deposition_reactor", capacity: 1 }
+      - { id: "reactor_12", type: "deposition_reactor", capacity: 1 }
+    processing_time:
+      base: 13.0
+      std: 2.75
+      distribution: "atlas_modulated"
+
+  S5_cooling:
+    name: "Post-reaction Treatment"
+    machines:
+      - { id: "cooling_chamber_A", type: "cooling_chamber", capacity: 1 }
+      - { id: "cooling_chamber_B", type: "cooling_chamber", capacity: 1 }
+      - { id: "cooling_chamber_C", type: "cooling_chamber", capacity: 1 }
+      - { id: "cooling_chamber_D", type: "cooling_chamber", capacity: 1 }
+      - { id: "cooling_chamber_E", type: "cooling_chamber", capacity: 1 }
+      - { id: "cooling_chamber_F", type: "cooling_chamber", capacity: 1 }
+    processing_time:
+      base: 5.0
+      std: 1.0
+      distribution: "normal"
+
+  S6_spectroscopy:
+    name: "Spectroscopy Characterization"
+    machines:
+      - { id: "spectrometer_A", type: "spectrometer", capacity: 1 }
+      - { id: "spectrometer_B", type: "spectrometer", capacity: 1 }
+    processing_time:
+      base: 5.0
+      std: 1.0
+      distribution: "normal"
+
+  S7_mass_spec:
+    name: "Mass Spectrometry"
+    machines:
+      - { id: "ICP_MS_A", type: "mass_spectrometer", capacity: 1 }
+      - { id: "ICP_MS_B", type: "mass_spectrometer", capacity: 1 }
+    processing_time:
+      base: 10.0
+      std: 1.0
+      distribution: "normal"
+
+job_types:
+  SDL_experiment:
+    sequence: ["S1", "S2", "S3", "S4", "S5", "S2", "S6", "S2", "S7"]
+    material: "sample"
+    priority: "normal"
+
+atlas_config:
+  parameter_space:
+    temperature: [400, 600]
+    pressure: [1, 10]
+    flow_rate: [10, 100]

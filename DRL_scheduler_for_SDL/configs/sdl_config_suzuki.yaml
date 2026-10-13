@@ -1,0 +1,60 @@
+drl_runtime_override:
+  use_config_machines: true
+
+env_config:
+  n_jobs: 30
+  buffer_size: 100
+
+  tmax_constraints:
+    - {from_step: "S4", to_step: "S5", max_interval: 5}
+    - {from_step: "S5", to_step: "S7", max_interval: 30}
+
+
+process_steps:
+  S1_substrate_prep:
+    processing_time: {base: 5, std: 0.0, distribution: "fixed"}
+  S2_mixing:
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+  S3_robotic_transfer:
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+  S4_reactor:
+    processing_time: {base: 5.0, std: 0.0, distribution: "suzuki_bo_driven"}
+  S5_quench:
+    processing_time: {base: 1, std: 0.0, distribution: "fixed"}
+  S6_sample_prep:
+    processing_time: {base: 5.0, std: 0.0, distribution: "fixed"}
+  S7_HPLC_quant:
+    processing_time: {base: 12.0, std: 0.0, distribution: "fixed"}
+
+job_types:
+  SDL_experiment:
+    sequence: ["S1","S2","S3","S4","S5","S3","S6","S3","S7"]
+    material: "sample"
+    substrate: "substrate"
+    priority: "normal"
+    weight: 1.0
+
+suzuki_bo_config:
+  planner_kind: "Botorch"
+  goal: "maximize"
+  n_warmup: 12
+  max_in_flight: 16
+  warmstart_ask_batch: 3
+  steady_ask_batch: 1
+  total_budget: 30
+  parameter_space:
+    ligand:
+      type: "categorical"
+      options: ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]
+    res_time:
+      type: "continuous"
+      low: 1.0
+      high: 10.0
+    temperature:
+      type: "continuous"
+      low: 30.0
+      high: 110.0
+    catalyst_loading:
+      type: "continuous"
+      low: 0.489
+      high: 2.515

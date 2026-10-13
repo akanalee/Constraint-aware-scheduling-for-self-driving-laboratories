@@ -1,0 +1,88 @@
+env_config:
+  n_jobs: 40
+  buffer_size: 100
+
+  tmax_constraints:
+    - {from_step: "S5", to_step: "S6", max_interval: 15}
+
+    - {from_step: "S6", to_step: "S7", max_interval: 60}
+
+
+process_steps:
+
+  S1_buffer_prep:
+    processing_time: {base: 10.0, std: 0.0, distribution: "fixed"}
+
+  S2_enzyme_solution_prep:
+    processing_time: {base: 6.0, std: 0.0, distribution: "fixed"}
+
+  S3_substrate_mixing:
+    processing_time: {base: 2.5, std: 0.0, distribution: "fixed"}
+
+  S4_robot_transfer:
+    processing_time: {base: 1.0, std: 0.0, distribution: "fixed"}
+
+  S5_enzymatic_incubation:
+    processing_time: {base: 60.0, std: 0.0, distribution: "fixed"}
+
+  S6_quench_sample_prep:
+    processing_time: {base: 6.0, std: 0.0, distribution: "fixed"}
+
+  S7_HPLC_quantification:
+    processing_time: {base: 28.0, std: 0.0, distribution: "fixed"}
+
+job_types:
+  SDL_experiment:
+    sequence: [
+      "S1_buffer_prep",
+      "S2_enzyme_solution_prep",
+      "S3_substrate_mixing",
+      "S4_robot_transfer",
+      "S5_enzymatic_incubation",
+      "S6_quench_sample_prep",
+      "S4_robot_transfer",
+      "S7_HPLC_quantification"
+    ]
+    material: "reaction_vial"
+    priority: "normal"
+    weight: 1.0
+
+alkox_bo_config:
+  planner_kind: "Botorch"
+  goal: "maximize"
+  n_warmup: 12
+  max_in_flight: 12
+  warmstart_ask_batch: 3
+  steady_ask_batch: 1
+  total_budget: 30
+
+  warmup_conv_ceiling: 10.0
+  warmup_pool_size: 400
+  warmup_max_tries: 20
+
+  ucb_steps: 8
+  ucb_beta_start: 4.0
+  ucb_beta_end: 1.0
+  acqf_num_restarts: 20
+  acqf_raw_samples: 512
+
+  parameter_space:
+    catalase:
+      type: "continuous"
+      low: 0.05
+      high: 1.0
+      unit: "mg/mL"
+    peroxidase:
+      type: "continuous"
+      low: 0.5
+      high: 10.0
+      unit: "U/mL"
+    alcohol_oxidase:
+      type: "continuous"
+      low: 2.0
+      high: 8.0
+      unit: "U/mL"
+    ph:
+      type: "continuous"
+      low: 6.0
+      high: 8.0
